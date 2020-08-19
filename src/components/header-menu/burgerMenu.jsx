@@ -8,11 +8,14 @@ const BurgerIcon= (props) => {
 
    <>
 
-        <img src={hamburger} alt="burger menu" onClick={props.onClick}/>
+        <Burger src={hamburger} alt="burger menu" onClick={props.onClick}/>
        
     </>
   )};
+const Burger = styled.img`
+  height:40px;
 
+`
 
 
 export default BurgerIcon;

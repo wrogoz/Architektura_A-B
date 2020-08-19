@@ -1,66 +1,63 @@
-import React,{useState} from "react";
-
-import styled from 'styled-components'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import logo from '../images/logo/LOGO_AB.png'
-import Menu from './header-menu/menu'
-import BurgerIcon from './header-menu/burgerMenu'
-import MobileMenu from './header-menu/mobile-menu'
+import React, { useState } from "react";
+import styled from "styled-components";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import logo from "../images/logo/LOGO_AB.png";
+import Menu from "./header-menu/menu";
+import BurgerIcon from "./header-menu/burgerMenu";
+import MobileMenu from "./header-menu/mobile-menu";
+import { Link } from "react-router-dom";
 const Header = () => {
-   
-    const [WindowWidth, setWindowWidth] = useState(window.innerWidth)
-    const [burgerActive, setBurgerActive] = useState(false)
-    
-    const saveWindowWidth = ()=>{
-        setWindowWidth(window.innerWidth)
-       
-    }
+  const [WindowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [burgerActive, setBurgerActive] = useState(false);
 
-    const showHideMobileMenu= ()=>{
-      
-    setBurgerActive(!burgerActive)
-       
-    }
+  const saveWindowWidth = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  const showHideMobileMenu = () => {
+    setBurgerActive(!burgerActive);
+  };
   return (
-    <header>
+    <HeaderBox>
       <Row>
-      <Col xs={4}>
-    <Logo src={logo} alt="logo" />
-</Col>
-<Col xs={8}>
-    <Nav>
-        {WindowWidth>800?<Menu />:<BurgerIcon onClick={showHideMobileMenu}/>}
-                  
-    </Nav>
-    </Col>
-    {burgerActive?<MobileMenu/>:null}
-    
+        <Col xs={4}>
+          <Link to="/" onClick={burgerActive ? showHideMobileMenu : null}>
+            <Logo src={logo} alt="logo" />
+          </Link>
+        </Col>
+        <Col xs={8}>
+          <Nav>
+            {WindowWidth > 800 ? (
+              <Menu />
+            ) : (
+              <BurgerIcon onClick={showHideMobileMenu} />
+            )}
+          </Nav>
+        </Col>
+        {burgerActive ? <MobileMenu onClick={showHideMobileMenu} /> : null}
       </Row>
-     
-      {window.addEventListener('resize',()=>{
-    saveWindowWidth()
-})}
- 
 
-  </header>
-
-  )
+      {window.addEventListener("resize", () => {
+        saveWindowWidth();
+      })}
+    </HeaderBox>
+  );
 };
-
+const HeaderBox = styled.header`
+  margin-bottom: 20px;
+`;
 const Logo = styled.img`
-    width:50px;
-    height:auto;
-    align-self:center;
-`
+  width: 70px;
+  height: auto;
+  align-self: center;
+`;
 const Nav = styled.nav`
-    display:flex;
-    list-style:none;
-    justify-content:flex-end;
-    align-items:center;
-    height:100%;
-  
-    
-`
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+`;
 
 export default Header;

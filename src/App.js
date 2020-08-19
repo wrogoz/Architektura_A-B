@@ -2,7 +2,8 @@ import React from 'react';
 import GlobalFonts from './assets/fonts/inter/fonts'
 import styled from 'styled-components'
 import Container from 'react-bootstrap/Container'
-
+import HomePage from './components/homePage'
+import Footer from './components/footer'
 import {
   Switch,
   Route
@@ -35,14 +36,12 @@ function App() {
         </Route>
 
         <Route  path="/">
-        <main> main 1st page  </main>
+        <HomePage/>
         </Route>
       </Switch>
 
       
-      <footer>
-        footer
-      </footer>
+      <Footer/>
     </StyledContainer>
   );
 }
@@ -50,11 +49,12 @@ function App() {
 
 
 const StyledContainer = styled(Container)`
-  background-color:grey;
-  padding-top:10px;
-  height:100vh;
+  
+  padding:10px;
+  min-height:100vh;
   font-family:interblack;
   text-transform:uppercase;
+
 `
 
 export default App;
