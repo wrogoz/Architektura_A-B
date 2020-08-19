@@ -1,26 +1,60 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import GlobalFonts from './assets/fonts/inter/fonts'
+import styled from 'styled-components'
+import Container from 'react-bootstrap/Container'
 
+import {
+  Switch,
+  Route
+} from "react-router-dom";
+import Header from './components/header'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyledContainer fluid>
+      <GlobalFonts/>
+
+      <Header/>
+
+      <Switch>
+        
+
+        <Route path="/projekty">
+          <main> projekty  </main>
+        </Route>
+
+        <Route path="/architektura">
+          <main> architektura  </main>
+        </Route>
+
+        <Route path="/wnętrza">
+          <main> wnętrza  </main>
+        </Route>
+
+        <Route path="/kontakt">
+          <main>kontakt  </main>
+        </Route>
+
+        <Route  path="/">
+        <main> main 1st page  </main>
+        </Route>
+      </Switch>
+
+      
+      <footer>
+        footer
+      </footer>
+    </StyledContainer>
   );
 }
+
+
+
+const StyledContainer = styled(Container)`
+  background-color:grey;
+  padding-top:10px;
+  height:100vh;
+  font-family:interblack;
+  text-transform:uppercase;
+`
 
 export default App;
