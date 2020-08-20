@@ -1,8 +1,19 @@
 import React from 'react';
-
+import {connect} from 'react-redux'
 import MobileEntries from './entries-elements/mobileEntries'
-const Entries = ()=> {
-    return(
+const Entries = (props)=> {
+    return(<>
+       
         <MobileEntries/>
+    </>
     )}
-export default Entries
+
+
+const mapStateToProps = (state) => {
+    return {
+      WindowWidth: state.WindowWidth,
+    
+    };
+  };
+
+export default connect(mapStateToProps)(Entries)

@@ -7,6 +7,7 @@ import bathroom from '../../images/entries/bathroom/01_1.jpg'
 const MobileEntries = ()=> {
     return(
         <Row>
+            
             <ProjectCol sm={12} >
                 <ProjectTitle >Bathroom Project</ProjectTitle>
                 <Img src={bathroom} rounded />

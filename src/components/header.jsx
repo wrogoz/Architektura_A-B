@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -6,41 +6,36 @@ import logo from "../images/logo/LOGO_AB.png";
 import Menu from "./header-menu/menu";
 import BurgerIcon from "./header-menu/burgerMenu";
 import MobileMenu from "./header-menu/mobile-menu";
-import {connect} from 'react-redux'
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import {changeWindowWidth} from '../redux/actions';
+import { changeWindowWidth, showHideMobileMenu } from "../redux/actions";
 const Header = (props) => {
-  
-  const [burgerActive, setBurgerActive] = useState(false);
 
-
-  const showHideMobileMenu = () => {
-    setBurgerActive(!burgerActive);
-   
+  const showHideMenu = () => {
+    props.dispatch(showHideMobileMenu());
   };
+
   return (
     <HeaderBox>
-      
       <Row>
         <Col xs={4}>
-          <Link to="/" onClick={burgerActive ? showHideMobileMenu : null}>
+          <Link to="/" onClick={props.isBurgerActive ? showHideMenu : null}>
             <Logo src={logo} alt="logo" />
           </Link>
         </Col>
         <Nav xs={8}>
-          
-            {props.WindowWidth > 800 ? (
-              <Menu />
-            ) : (
-              <BurgerIcon onClick={showHideMobileMenu} />
-            )}
-          </Nav>
-        
-        {burgerActive ? <MobileMenu onClick={showHideMobileMenu} /> : null}
+          {props.WindowWidth > 800 ? (
+            <Menu />
+          ) : (
+            <BurgerIcon onClick={showHideMenu} />
+          )}
+        </Nav>
+
+        {props.isBurgerActive ? <MobileMenu onClick={showHideMenu} /> : null}
       </Row>
 
       {window.addEventListener("resize", () => {
-        props.dispatch(changeWindowWidth(window.innerWidth))
+        props.dispatch(changeWindowWidth(window.innerWidth));
       })}
     </HeaderBox>
   );
@@ -61,12 +56,10 @@ const Nav = styled(Col)`
   height: 100%;
 `;
 
-
-
-
 const mapStateToProps = (state) => {
   return {
-    WindowWidth:state.WindowWidth
+    WindowWidth: state.WindowWidth,
+    isBurgerActive: state.isBurgerActive,
   };
 };
 

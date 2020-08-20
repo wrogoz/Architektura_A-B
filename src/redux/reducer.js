@@ -1,6 +1,7 @@
 
 const initialState = {
-    WindowWidth:window.innerWidth
+    WindowWidth:window.innerWidth,
+    isBurgerActive:false
    }
   
   const reducer = (state = initialState, action)=> {
@@ -11,6 +12,11 @@ const initialState = {
             ...state,
             WindowWidth:action.width
            
+          }
+          case "SHOWHIDEMOBILEMENU":
+          return {
+            ...state,
+            isBurgerActive:!state.isBurgerActive
           }
         default:
           return state

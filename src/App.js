@@ -41,7 +41,6 @@ function App() {
         </Route>
       </Switch>
 
-      
       <Footer/>
     </StyledContainer>
   );
@@ -50,7 +49,6 @@ function App() {
 
 
 const StyledContainer = styled(Container)`
-  
   padding:10px;
   min-height:100vh;
   font-family:interblack;
