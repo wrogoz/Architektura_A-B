@@ -3,6 +3,7 @@ import GlobalFonts from './assets/fonts/inter/fonts'
 import styled from 'styled-components'
 import Container from 'react-bootstrap/Container'
 import HomePage from './components/homePage'
+import Entries from './components/entries'
 import Footer from './components/footer'
 import {
   Switch,
@@ -28,7 +29,7 @@ function App() {
         </Route>
 
         <Route path="/wnętrza">
-          <main> wnętrza  </main>
+          <Entries/>
         </Route>
 
         <Route path="/kontakt">
@@ -54,7 +55,7 @@ const StyledContainer = styled(Container)`
   min-height:100vh;
   font-family:interblack;
   text-transform:uppercase;
-
+  font-size:0.7rem;
 `
 
 export default App;

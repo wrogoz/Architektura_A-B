@@ -6,40 +6,41 @@ import logo from "../images/logo/LOGO_AB.png";
 import Menu from "./header-menu/menu";
 import BurgerIcon from "./header-menu/burgerMenu";
 import MobileMenu from "./header-menu/mobile-menu";
+import {connect} from 'react-redux'
 import { Link } from "react-router-dom";
-const Header = () => {
-  const [WindowWidth, setWindowWidth] = useState(window.innerWidth);
+import {changeWindowWidth} from '../redux/actions';
+const Header = (props) => {
+  
   const [burgerActive, setBurgerActive] = useState(false);
 
-  const saveWindowWidth = () => {
-    setWindowWidth(window.innerWidth);
-  };
 
   const showHideMobileMenu = () => {
     setBurgerActive(!burgerActive);
+   
   };
   return (
     <HeaderBox>
+      
       <Row>
         <Col xs={4}>
           <Link to="/" onClick={burgerActive ? showHideMobileMenu : null}>
             <Logo src={logo} alt="logo" />
           </Link>
         </Col>
-        <Col xs={8}>
-          <Nav>
-            {WindowWidth > 800 ? (
+        <Nav xs={8}>
+          
+            {props.WindowWidth > 800 ? (
               <Menu />
             ) : (
               <BurgerIcon onClick={showHideMobileMenu} />
             )}
           </Nav>
-        </Col>
+        
         {burgerActive ? <MobileMenu onClick={showHideMobileMenu} /> : null}
       </Row>
 
       {window.addEventListener("resize", () => {
-        saveWindowWidth();
+        props.dispatch(changeWindowWidth(window.innerWidth))
       })}
     </HeaderBox>
   );
@@ -52,7 +53,7 @@ const Logo = styled.img`
   height: auto;
   align-self: center;
 `;
-const Nav = styled.nav`
+const Nav = styled(Col)`
   display: flex;
   list-style: none;
   justify-content: flex-end;
@@ -60,4 +61,13 @@ const Nav = styled.nav`
   height: 100%;
 `;
 
-export default Header;
+
+
+
+const mapStateToProps = (state) => {
+  return {
+    WindowWidth:state.WindowWidth
+  };
+};
+
+export default connect(mapStateToProps)(Header);
