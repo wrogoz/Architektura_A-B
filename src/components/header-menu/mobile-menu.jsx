@@ -13,7 +13,7 @@ const MobileMenu = (props) => {
           <StyledLink to="/projekty">Projekty</StyledLink>
         </li>
         <li>
-          <StyledLink to="/Architektura">Architektura</StyledLink>
+          <StyledLink to="/architecture">Architektura</StyledLink>
         </li>
         <li>
           <StyledLink to="/entries">wnętrza</StyledLink>

@@ -1,5 +1,5 @@
 import React from 'react'
-import SingleProject from './singleProjectComponent/singleProjectDetails'
+import SingleProject from '../../singleProjectComponent/singleProjectDetails'
 import img1 from '../../../images/entries/bathroom/01_1.jpg'
 import img2 from '../../../images/entries/bathroom/02_1.jpg'
 import img3 from '../../../images/entries/bathroom/03_1.jpg'

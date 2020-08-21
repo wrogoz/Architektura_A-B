@@ -5,7 +5,9 @@ import Container from 'react-bootstrap/Container'
 import HomePage from './components/homePage'
 import Entries from './components/entries'
 import Footer from './components/footer'
-import Bathroom from './components/entries-elements/singleProjects/bathroom';
+import Architecture from './components/architecture'
+import Bathroom from './components/entries-elements/singleEntriesProjects/bathroom';
+import SwimmingPool from './components/architecture-elements/singleArchitectureProjects/swimmingPool'
 import {
   Switch,
   Route
@@ -22,11 +24,15 @@ function App() {
         
 
         <Route path="/projekty">
-          <main> projekty  </main>
-        </Route>
+        <Architecture />
+        <Entries/>
 
-        <Route path="/architektura">
-          <main> architektura  </main>
+        </Route>
+        <Route exact path="/architecture/swimmingPool">
+          <SwimmingPool/>
+        </Route>
+        <Route path="/architecture">
+          <Architecture />
         </Route>
 
         <Route exact path="/entries/bathroom">

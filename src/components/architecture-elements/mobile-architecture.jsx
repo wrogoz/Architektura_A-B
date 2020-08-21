@@ -7,7 +7,7 @@ import bathroom from '../../images/entries/bathroom/01_1.jpg'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {showHideMobileMenu} from '../../redux/actions'
-const MobileEntries = (props)=> {
+const MobileArchitecture = (props)=> {
 
     const hideMobileMenu = ()=>{
        if(props.isMenuOpen){
@@ -20,8 +20,8 @@ const MobileEntries = (props)=> {
         <Row>
 
 <Col sm={12} >
-            <Link to="/entries/bathroom" onClick={hideMobileMenu}>
-                <ProjectTitle >entries Title</ProjectTitle>
+            <Link to="/architecture/swimmingPool" onClick={hideMobileMenu}>
+                <ProjectTitle >a Title</ProjectTitle>
                 <ImgBox>
                     <Img src={bathroom} rounded />
                 </ImgBox>
@@ -63,4 +63,4 @@ const mapStateToProps =(state)=>{
 }
 
 
-export default connect(mapStateToProps)(MobileEntries)
+export default connect(mapStateToProps)(MobileArchitecture)
