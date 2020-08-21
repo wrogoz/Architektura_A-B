@@ -3,14 +3,13 @@ import styled from "styled-components";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import logo from "../images/logo/LOGO_AB.png";
-import Menu from "./header-menu/menu";
-import BurgerIcon from "./header-menu/burgerMenu";
-import MobileMenu from "./header-menu/mobile-menu";
+import Menu from "./navigation/menu";
+import BurgerIcon from "./navigation/burger";
+import MobileMenu from "./navigation/mobile-menu";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { changeWindowWidth, showHideMobileMenu } from "../redux/actions";
 const Header = (props) => {
-
   const showHideMenu = () => {
     props.dispatch(showHideMobileMenu());
   };
@@ -42,7 +41,7 @@ const Header = (props) => {
 };
 const HeaderBox = styled.header`
   margin-bottom: 20px;
-  text-transform:uppercase;
+  text-transform: uppercase;
 `;
 const Logo = styled.img`
   width: 70px;
@@ -59,7 +58,6 @@ const Nav = styled(Col)`
 
 const mapStateToProps = (state) => {
   return {
-
     WindowWidth: state.WindowWidth,
     isMenuOpen: state.isMenuOpen,
   };

@@ -38,7 +38,7 @@ const Nav = styled(Col)`
   }
 `;
 const StyledLink = styled(Link)`
-    margin-bottom:5px;
+  margin-bottom: 5px;
   text-decoration: none;
   color: #000;
   &:link {
