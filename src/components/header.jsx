@@ -19,7 +19,7 @@ const Header = (props) => {
     <HeaderBox>
       <Row>
         <Col xs={4}>
-          <Link to="/" onClick={props.isBurgerActive ? showHideMenu : null}>
+          <Link to="/" onClick={props.isMenuOpen ? showHideMenu : null}>
             <Logo src={logo} alt="logo" />
           </Link>
         </Col>
@@ -31,7 +31,7 @@ const Header = (props) => {
           )}
         </Nav>
 
-        {props.isBurgerActive ? <MobileMenu onClick={showHideMenu} /> : null}
+        {props.isMenuOpen ? <MobileMenu onClick={showHideMenu} /> : null}
       </Row>
 
       {window.addEventListener("resize", () => {
@@ -42,6 +42,7 @@ const Header = (props) => {
 };
 const HeaderBox = styled.header`
   margin-bottom: 20px;
+  text-transform:uppercase;
 `;
 const Logo = styled.img`
   width: 70px;
@@ -58,8 +59,9 @@ const Nav = styled(Col)`
 
 const mapStateToProps = (state) => {
   return {
+
     WindowWidth: state.WindowWidth,
-    isBurgerActive: state.isBurgerActive,
+    isMenuOpen: state.isMenuOpen,
   };
 };
 

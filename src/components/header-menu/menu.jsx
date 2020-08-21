@@ -9,7 +9,7 @@ const Menu = () => {
     
         <li><NavLink to='/projekty'>Projekty</NavLink></li>
         <li><NavLink  to='/Architektura'>Architektura</NavLink></li>
-        <li><NavLink to='/wnętrza'>wnętrza</NavLink></li>
+        <li><NavLink to='/entries'>wnętrza</NavLink></li>
         <li><NavLink to='/kontakt'>kontakt</NavLink></li>
    
        

@@ -16,15 +16,21 @@ const Footer =()=>{
 }
 const FooterRow = styled(Row)`
  margin:5% 0;
+
+ display:flex;
+ flex-flow: column;
+  flex-grow:1;
 `
 const FooterCol = styled(Col)`
   display:flex;
   justify-content:center;
   align-items:center;
   align-content:stretch;
+  
 `
 
 const SocialIcon = styled.i`
     margin-left:20px;
+        margin-top: auto;
 `
 export default Footer

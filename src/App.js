@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import HomePage from './components/homePage'
 import Entries from './components/entries'
 import Footer from './components/footer'
+import Bathroom from './components/entries-elements/singleProjects/bathroom';
 import {
   Switch,
   Route
@@ -28,7 +29,10 @@ function App() {
           <main> architektura  </main>
         </Route>
 
-        <Route path="/wnętrza">
+        <Route exact path="/entries/bathroom">
+          <Bathroom/>
+        </Route>
+        <Route path="/entries">
           <Entries/>
         </Route>
 
@@ -52,7 +56,8 @@ const StyledContainer = styled(Container)`
   padding:10px;
   min-height:100vh;
   font-family:interblack;
-  text-transform:uppercase;
+  display:flex;
+  flex-direction:column;
   font-size:0.7rem;
 `
 
