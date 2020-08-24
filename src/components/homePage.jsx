@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <Test>
       <HomeBox>
-        <Slider indicators={false} controls={false}>
+        <Slider indicators={false} controls={false} interval={3000}>
           <Carousel.Item>
             <SliderImage
               className="d-block w-100"
@@ -45,5 +45,10 @@ const SliderImage = styled.div`
         background-size: auto 100%;
         background-position: 30% 50%;
         background-repeat: no-repeat;
+        @media(min-width:800px){
+          background-size:cover;
+          background-position:0;
+          min-height:73vh;
+        }
     `;
 export default HomePage;

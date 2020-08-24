@@ -59,6 +59,9 @@ const StyledContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   font-size: 0.7rem;
+  @media(min-width:800px){
+    padding:2%
+  }
 `;
 
 export default App;

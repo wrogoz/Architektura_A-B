@@ -14,10 +14,14 @@ const Footer = () => {
 };
 const FooterRow = styled(Row)`
   margin: 5% 0;
-
+ 
   display: flex;
   flex-flow: column;
   flex-grow: 1;
+  @media(min-width:800px){
+  margin: 0;
+  margin-top: 2%;
+        }
 `;
 const FooterCol = styled(Col)`
   display: flex;
@@ -28,6 +32,6 @@ const FooterCol = styled(Col)`
 
 const SocialIcon = styled.i`
   margin-left: 20px;
-  margin-top: auto;
+  
 `;
 export default Footer;

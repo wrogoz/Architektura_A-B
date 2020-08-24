@@ -16,7 +16,7 @@ const Header = (props) => {
 
   return (
     <HeaderBox>
-      <Row>
+      <HeaderRow>
         <Col xs={4}>
           <Link to="/" onClick={props.isMenuOpen ? showHideMenu : null}>
             <Logo src={logo} alt="logo" />
@@ -31,7 +31,7 @@ const Header = (props) => {
         </Nav>
 
         {props.isMenuOpen ? <MobileMenu onClick={showHideMenu} /> : null}
-      </Row>
+      </HeaderRow>
 
       {window.addEventListener("resize", () => {
         props.dispatch(changeWindowWidth(window.innerWidth));
@@ -39,10 +39,14 @@ const Header = (props) => {
     </HeaderBox>
   );
 };
+
 const HeaderBox = styled.header`
   margin-bottom: 20px;
   text-transform: uppercase;
 `;
+const HeaderRow= styled(Row)`
+  align-items:center;
+`
 const Logo = styled.img`
   width: 70px;
   height: auto;

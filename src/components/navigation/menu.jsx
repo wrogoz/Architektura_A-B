@@ -4,12 +4,12 @@ import styled from "styled-components";
 
 const Menu = () => {
   return (
-    <>
+    <Ul>
       <li>
         <NavLink to="/projekty">Projekty</NavLink>
       </li>
       <li>
-        <NavLink to="/Architektura">Architektura</NavLink>
+        <NavLink to="/architecture">Architektura</NavLink>
       </li>
       <li>
         <NavLink to="/entries">wnętrza</NavLink>
@@ -17,10 +17,16 @@ const Menu = () => {
       <li>
         <NavLink to="/kontakt">kontakt</NavLink>
       </li>
-    </>
+    </Ul>
   );
 };
-
+const Ul = styled.ul` 
+  display: flex;
+  
+  list-style: none;
+  line-height: 30px;
+  margin-bottom: -5px;
+`
 const NavLink = styled(Link)`
   text-decoration: none;
   color: #000;
