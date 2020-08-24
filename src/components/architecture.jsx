@@ -1,10 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
-import MobileArchitecture from "./architecture-elements//mobile-architecture";
+import MobileArchitecture from "./architecture-elements/mobileArchitecture";
+import DesktopArchitectur from "./architecture-elements/desktopArchitecture"
 const Architecture = (props) => {
   return (
     <>
-      <MobileArchitecture />
+      {props.WindowWidth<800?<MobileArchitecture />:<DesktopArchitectur/>}
     </>
   );
 };

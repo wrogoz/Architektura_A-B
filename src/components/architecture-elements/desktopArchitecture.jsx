@@ -1,34 +1,34 @@
 import React from "react";
 import bathroom from "../../images/entries/bathroom/01_1.jpg";
 import Row from "react-bootstrap/Row";
-
-import MobileProjectElement from "../singleProjectComponent/mobileProjectListElement";
-
+import DesktopProjectElement from '../singleProjectComponent/desktopProjectListElement'
 
 
-const MobileEntries = (props) => {
+
+
+const DesktopArchitecture = (props) => {
   
     // to do: create array with object {title,imgsrc,path} to display
 
   return (
-    <Row>
-      <MobileProjectElement
-      title="Project 1"
+    <Row noGutters={true}>
+      <DesktopProjectElement
+     
       imgSrc={bathroom}
       path='/entries/bathroom'
       />
-      <MobileProjectElement
-      title="Project 2"
+      <DesktopProjectElement
+     
       imgSrc={bathroom}
       path='/entries/bathroom'
       />
-      <MobileProjectElement
-      title="Project 3"
+     <DesktopProjectElement
+    
       imgSrc={bathroom}
       path='/entries/bathroom'
       />
-      <MobileProjectElement
-      title="Project 4"
+      <DesktopProjectElement
+  
       imgSrc={bathroom}
       path='/entries/bathroom'
       />
@@ -38,4 +38,4 @@ const MobileEntries = (props) => {
 
 
 
-export default MobileEntries
+export default DesktopArchitecture

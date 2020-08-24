@@ -1,10 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 import MobileEntries from "./entries-elements/mobileEntries";
+import DesktopEntries from './entries-elements/desktopEntries'
 const Entries = (props) => {
   return (
     <>
-      <MobileEntries />
+      {props.WindowWidth<800?<MobileEntries />:<DesktopEntries/>}
     </>
   );
 };

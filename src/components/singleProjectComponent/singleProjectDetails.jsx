@@ -16,7 +16,7 @@ const SingleProject = (props) => {
   return (
     <section>
       <Row>
-        <SingleProjectCol>
+        <SingleProjectCol  xs={12}>
           <DescriptionBox>
             <Title>{props.projectName}</Title>
             <p>Lokalizacja:{props.location}</p>
@@ -29,7 +29,7 @@ const SingleProject = (props) => {
           </DescriptionBox>
         </SingleProjectCol>
       </Row>
-      <ImgRow>{imageList}</ImgRow>
+      <ImgRow >{imageList}</ImgRow>
     </section>
   );
 };
@@ -44,6 +44,14 @@ const ImageCol = styled(Col)`
   max-height: 60vh;
   margin-bottom: 20px;
   overflow: hidden;
+  @media(min-width:800px){
+    
+   display:flex;
+   width:100%;
+   justify-content: center;
+    height:auto;
+    max-height:100vh;
+  }
 `;
 const Title = styled.h3`
   font-size: 1rem;
@@ -60,9 +68,12 @@ const DescriptionBox = styled.section`
     line-height: 25px;
   }
 `;
-const ImgRow = styled(Row)``;
+const ImgRow = styled(Row)`
+ 
+`;
 const Img = styled(Image)`
   width: 100%;
+  max-width:700px;
   margin-top: -18%;
   padding: 0 10px;
 `;

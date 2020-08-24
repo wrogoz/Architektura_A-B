@@ -3,19 +3,14 @@ import styled from 'styled-components'
 import {Link} from 'react-router-dom';
 import Col from 'react-bootstrap/Col'
 import {Image} from 'react-bootstrap'
-import {connect} from 'react-redux'
-import {showHideMobileMenu} from '../../redux/actions'
-const MobileProjectElement = (props)=>{
 
-    const hideMobileMenu = () => {
-        if (props.isMenuOpen) {
-          props.dispatch(showHideMobileMenu());
-        }
-      };
+const DesktopProjectElement = (props)=>{
+
+   
     return(
-        <Col sm={12}>
-        <Link to={props.path} onClick={hideMobileMenu}>
-    <ProjectTitle>{props.title}</ProjectTitle>
+        <Col md={6}>
+        <Link to={props.path} >
+   
           <ImgBox>
             <Img src={props.imgSrc} rounded />
           </ImgBox>
@@ -33,19 +28,14 @@ const ProjectTitle = styled.h2`
 `;
 const Img = styled(Image)`
   width: 100%;
-  margin-top: -18%;
+ 
   padding: 0 10px;
 `;
 const ImgBox = styled.div`
-  height: 35vh;
+  height: 70vh;
   overflow: hidden;
   margin-bottom: 20px;
 `;
 
-const mapStateToProps = (state)=>{
-    return {
-        isMenuOpen:state.isMenuOpen
-    }
-}
 
-export default connect(mapStateToProps)(MobileProjectElement)
+export default DesktopProjectElement
