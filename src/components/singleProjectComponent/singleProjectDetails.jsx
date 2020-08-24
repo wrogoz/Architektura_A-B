@@ -7,8 +7,8 @@ import Image from "react-bootstrap/Image";
 const SingleProject = (props) => {
   const imageList = props.arrayOfImages.map((el) => {
     return (
-      <ImageCol xs={12}>
-        <Img key={el} src={el} />
+      <ImageCol xs={12} key={el}>
+        <Img  src={el} />
       </ImageCol>
     );
   });
