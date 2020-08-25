@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <Test>
       <HomeBox>
-        <Slider indicators={false} controls={false} interval={3000}>
+        <Slider indicators={false} controls={false} pause={false} >
           <Carousel.Item>
             <SliderImage
               className="d-block w-100"
