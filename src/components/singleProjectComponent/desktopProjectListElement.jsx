@@ -12,7 +12,12 @@ const DesktopProjectElement = (props)=>{
         <Link to={props.path} >
    
           <ImgBox>
-            <Img src={props.imgSrc} rounded />
+         
+          <Img src={props.imgSrc} rounded />
+          <Mask >
+            <p>Title</p>
+          </Mask>
+          
           </ImgBox>
         </Link>
       </Col>
@@ -29,13 +34,37 @@ const ProjectTitle = styled.h2`
 const Img = styled(Image)`
   width: 100%;
  
-  padding: 0 10px;
+  margin: 0 20px;
+  
 `;
 const ImgBox = styled.div`
+position:relative;
   height: 70vh;
   overflow: hidden;
   margin-bottom: 20px;
+  
 `;
+const Mask = styled.div`
+display:flex;
+justify-content:center;
+align-items:center;
+top:0;
+left:0;
+  position:absolute;
+  height:100%;
+  width:100%;
+  opacity:0;
+  background:#000;
+  margin:0 20px;
+  p{
+    color:#fff;
+    font-size:32px;
+  }
+  &:hover{
+    opacity:0.7;
+  }
+
+`
 
 
 export default DesktopProjectElement
