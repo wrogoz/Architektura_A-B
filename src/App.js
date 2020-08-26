@@ -10,6 +10,7 @@ import Bathroom from "./components/entries-elements/singleEntriesProjects/bathro
 import SwimmingPool from "./components/architecture-elements/singleArchitectureProjects/swimmingPool";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/header";
+import Contact from './components/contact'
 function App() {
   return (
     <StyledContainer fluid>
@@ -39,7 +40,7 @@ function App() {
         </Route>
 
         <Route path="/kontakt">
-          <main>kontakt </main>
+          < Contact/>
         </Route>
 
         <Route path="/">

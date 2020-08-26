@@ -15,7 +15,7 @@ const DesktopProjectElement = (props)=>{
          
           <Img src={props.imgSrc} rounded />
           <Mask >
-            <p>Title</p>
+            <p>{props.title}</p>
           </Mask>
           
           </ImgBox>
@@ -23,25 +23,17 @@ const DesktopProjectElement = (props)=>{
       </Col>
     )
 }
-const ProjectTitle = styled.h2`
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
-  color: #000;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-`;
+
 const Img = styled(Image)`
   width: 100%;
- 
-  margin: 0 20px;
-  
+  position:relative;
 `;
 const ImgBox = styled.div`
 position:relative;
   height: 70vh;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin:15px;
+  
   
 `;
 const Mask = styled.div`
@@ -55,7 +47,7 @@ left:0;
   width:100%;
   opacity:0;
   background:#000;
-  margin:0 20px;
+ 
   p{
     color:#fff;
     font-size:32px;

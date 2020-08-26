@@ -16,21 +16,25 @@ const DesktopArchitecture = (props) => {
      
       imgSrc={bathroom}
       path='/entries/bathroom'
+      title='Architecture project'
       />
       <DesktopProjectElement
      
       imgSrc={bathroom}
       path='/entries/bathroom'
+      title= 'Architecture project'
       />
      <DesktopProjectElement
     
       imgSrc={bathroom}
       path='/entries/bathroom'
+      title= 'Architecture project'
       />
       <DesktopProjectElement
   
       imgSrc={bathroom}
       path='/entries/bathroom'
+      title= 'Architecture project'
       />
     </Row>
   );

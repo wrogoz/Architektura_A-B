@@ -16,21 +16,25 @@ const DesktopEntries = (props) => {
      
       imgSrc={bathroom}
       path='/entries/bathroom'
+      title="Entries project"
       />
       <DesktopProjectElement
      
       imgSrc={bathroom}
       path='/entries/bathroom'
+      title="Entries project"
       />
      <DesktopProjectElement
     
       imgSrc={bathroom}
       path='/entries/bathroom'
+      title="Entries project"
       />
       <DesktopProjectElement
   
       imgSrc={bathroom}
       path='/entries/bathroom'
+      title="Entries project"
       />
     </Row>
   );
