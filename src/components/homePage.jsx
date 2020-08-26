@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Carousel from "react-bootstrap/Carousel";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image"
 import img1 from "../images/startPage/img1.jpg";
 import img2 from "../images/startPage/img2.jpg";
 
@@ -11,20 +12,20 @@ const HomePage = () => {
     <Test>
       <HomeBox>
         <Slider indicators={false} controls={false} pause={false} >
-          <Carousel.Item>
+          <CarouselItem >
             <SliderImage
-              className="d-block w-100"
-              bgImage={img1}
+              className="d-block "
+              src={img1}
               alt="First slide"
             />
-          </Carousel.Item>
-          <Carousel.Item>
+          </CarouselItem>
+          <CarouselItem >
             <SliderImage
-              className="d-block w-100"
-              bgImage={img2}
+              className="d-block "
+              src={img2}
               alt="second slide"
             />
-          </Carousel.Item>
+          </CarouselItem>
         </Slider>
       </HomeBox>
     </Test>
@@ -35,20 +36,21 @@ const HomeBox = styled(Col)`
   display: flex;
   justify-content: center;
 `;
+const CarouselItem = styled(Carousel.Item)`
+  position: relative;
+  overflow:hidden;
+  width:auto;
+  `
 const Slider = styled(Carousel)`
   width: 100%;
 `;
-const SliderImage = styled.div`
-        min-height:75vh;
+const SliderImage = styled(Image)`
+        height:70vh;
         width:100%;
-        background-image:url("${(props) => props.bgImage}");
-        background-size: auto 100%;
-        background-position: 30% 50%;
-        background-repeat: no-repeat;
+       
         @media(min-width:800px){
-          background-size:cover;
-          background-position:0;
-          min-height:73vh;
+         
+          height:73vh;
         }
     `;
 export default HomePage;
