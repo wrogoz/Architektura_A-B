@@ -39,7 +39,7 @@ const Slider = styled(Carousel)`
   width: 100%;
 `;
 const SliderImage = styled.div`
-        min-height:80vh;
+        min-height:75vh;
         width:100%;
         background-image:url("${(props) => props.bgImage}");
         background-size: auto 100%;
