@@ -55,7 +55,7 @@ function App() {
 
 const StyledContainer = styled(Container)`
   padding: 10px;
-  min-height: 100vh;
+  min-height: 95vh;
   font-family: interblack;
   display: flex;
   flex-direction: column;
