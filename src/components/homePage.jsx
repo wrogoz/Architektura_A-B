@@ -27,6 +27,7 @@ const HomePage = () => {
 const HomeBox = styled(Col)`
   display: flex;
   justify-content: center;
+  flex-grow:1;
 `;
 
 const Slider = styled(Carousel)`
@@ -35,7 +36,8 @@ const Slider = styled(Carousel)`
   overflow: hidden;
 `;
 const SliderImage = styled(Image)`
-  height: 74vh;
+  min-height: 74vh;
+  max-height:79vh;
   width: auto;
   overflow: hidden;
   @media(max-height:641px){
