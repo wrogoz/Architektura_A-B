@@ -58,6 +58,9 @@ const StyledContainer = styled(Container)`
  
   font-family: interblack;
   display: flex;
+  flex-grow:1;
+  justify-content: center;
+height: 100vh;
   flex-direction: column;
   font-size: 0.7rem;
   @media(min-width:800px){
