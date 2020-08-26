@@ -13,8 +13,8 @@ const Footer = () => {
   );
 };
 const FooterRow = styled(Row)`
-  margin: 5% 0;
  
+  margin-top:5%;
   display: flex;
   flex-flow: column;
   flex-grow: 1;
