@@ -36,7 +36,7 @@ const Slider = styled(Carousel)`
   overflow: hidden;
 `;
 const SliderImage = styled(Image)`
-  height: 72vh;
+  height: 70vh;
   width: auto;
   overflow: hidden;
   @media(max-height:641px){
