@@ -39,9 +39,9 @@ const SliderImage = styled(Image)`
   height: 75vh;
   width: auto;
   overflow: hidden;
-  @media(max-height:641px){
+  /* @media(max-height:641px){
     max-height:65vh;
-  }
+  } */
   @media (min-width: 800px) {
     height: auto;
     max-height: 71vh;

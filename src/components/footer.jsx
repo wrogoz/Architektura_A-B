@@ -17,17 +17,20 @@ const FooterRow = styled(Row)`
 
   display: flex;
   flex-flow: column;
-  flex-grow: 1;
+  justify-content:center;
+  flex-grow:1;
+  
   @media(min-width:800px){
   margin: 0;
   margin-top: 2%;
+  max-height:none;
         }
 `;
 const FooterCol = styled(Col)`
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: stretch;
+
 `;
 
 const SocialIcon = styled.i`
