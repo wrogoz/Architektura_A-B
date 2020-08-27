@@ -31,6 +31,7 @@ function App() {
         <Route path="/architecture">
           <Architecture />
         </Route>
+        
 
         <Route exact path="/entries/bathroom">
           <Bathroom />
@@ -58,7 +59,7 @@ const StyledContainer = styled(Container)`
  
   font-family: interblack;
   display: flex;
-  flex-grow:1;
+
   justify-content: center;
   min-height: 100vh;
   flex-direction: column;

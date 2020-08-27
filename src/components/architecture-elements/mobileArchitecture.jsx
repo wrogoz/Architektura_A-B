@@ -13,22 +13,22 @@ const MobileArchitecture = () => {
 <MobileProjectElement
       title="Architecture 1"
       imgSrc={bathroom}
-      path='bathroom'
+      path='/architecture/swimmingPool'
       />
       <MobileProjectElement
       title="Architecture 2"
       imgSrc={bathroom}
-      path='bathroom'
+      path='/architecture/swimmingPool'
       />
       <MobileProjectElement
       title="Architecture 3"
       imgSrc={bathroom}
-      path='bathroom'
+      path='/architecture/swimmingPool'
       />
       <MobileProjectElement
       title="Architecture 4"
       imgSrc={bathroom}
-      path='bathroom'
+      path='/architecture/swimmingPool'
       />
     </Row>
   );
