@@ -14,7 +14,7 @@ const Footer = () => {
 };
 const FooterRow = styled(Row)`
  
-  margin:3% 0;
+
   display: flex;
   flex-flow: column;
   flex-grow: 1;
