@@ -41,7 +41,7 @@ const SingleProjectCol = styled(Col)`
   margin-bottom: 20px;
 `;
 const ImageCol = styled(Col)`
-  max-height: 60vh;
+  /* max-height: 60vh;  bo beatka chciala*/
   margin-bottom: 20px;
   overflow: hidden;
   @media(min-width:800px){
