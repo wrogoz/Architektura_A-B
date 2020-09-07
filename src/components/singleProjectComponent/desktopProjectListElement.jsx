@@ -48,7 +48,7 @@ left:0;
   height:100%;
   width:100%;
   opacity:0;
-  background:#cccccc77;
+  background:#cccccc30;
  
   p{
     color:#fff;

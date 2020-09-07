@@ -47,6 +47,9 @@ function App() {
         <Route path="/">
           <HomePage />
         </Route>
+        <Route path="*" exact={true} >
+          <HomePage />
+        </Route>
       </Switch>
 
       <Footer />
