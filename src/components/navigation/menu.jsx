@@ -34,6 +34,7 @@ const NavLink = styled(Link)`
   &:link {
     text-decoration: none;
     color: #000;
+    outline: none;
   }
   &:visited {
     text-decoration: none;

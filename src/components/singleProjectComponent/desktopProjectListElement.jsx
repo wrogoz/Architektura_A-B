@@ -31,7 +31,8 @@ const Img = styled(Image)`
 `;
 const ImgBox = styled.div`
 position:relative;
-  height: 70vh;
+  max-height: 35vh;
+  max-width:40vw;
   overflow: hidden;
   margin:15px;
   
@@ -47,14 +48,18 @@ left:0;
   height:100%;
   width:100%;
   opacity:0;
-  background:#000;
+  background:#cccccc77;
  
   p{
     color:#fff;
-    font-size:32px;
+    font-size:2rem;
+    text-transform:uppercase;
+   
   }
   &:hover{
-    opacity:0.7;
+    opacity:1;
+    
+
   }
 
 `
