@@ -27,6 +27,7 @@ const DesktopProjectElement = (props)=>{
 const Img = styled(Image)`
   width: 100%;
   position:relative;
+  border-radius:0 !important;
 `;
 const ImgBox = styled.div`
 position:relative;

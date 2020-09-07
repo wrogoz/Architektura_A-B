@@ -44,9 +44,11 @@ const SliderImage = styled(Image)`
   } */
   @media (min-width: 800px) {
     height: auto;
-    max-height: 71vh;
-    min-width: 100%;
+    
+    margin:0 auto;
     overflow: hidden;
+    width:100%;
+    max-width:1300px;
   }
 `;
 export default HomePage;
