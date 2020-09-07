@@ -74,7 +74,7 @@ const ImgRow = styled(Row)`
 const Img = styled(Image)`
   width: 100%;
   max-width:700px;
-  margin-top: -18%;
+  
   padding: 0 10px;
   @media(min-width:800px){
     margin-top:0;
