@@ -66,6 +66,7 @@ const Title = styled.h3`
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 4px;
+  margin-bottom:15px;
 `;
 const DescriptionBox = styled.section`
   display: flex;
