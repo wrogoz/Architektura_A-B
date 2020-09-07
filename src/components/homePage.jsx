@@ -48,7 +48,7 @@ const SliderImage = styled(Image)`
     margin:0 auto;
     overflow: hidden;
     width:100%;
-    max-width:1300px;
+    
   }
 `;
 export default HomePage;
