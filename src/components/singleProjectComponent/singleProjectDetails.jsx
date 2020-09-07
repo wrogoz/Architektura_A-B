@@ -14,7 +14,7 @@ const SingleProject = (props) => {
   });
 
   return (
-    <section>
+    <SingleProjectContainer>
       <Row>
         <SingleProjectCol  xs={12}>
           <DescriptionBox>
@@ -30,15 +30,23 @@ const SingleProject = (props) => {
         </SingleProjectCol>
       </Row>
       <ImgRow >{imageList}</ImgRow>
-    </section>
+    </SingleProjectContainer>
   );
 };
+const SingleProjectContainer = styled.section`
+@media(min-width:800px){
+  display:flex;
+}
 
+`
 const SingleProjectCol = styled(Col)`
   display: flex;
   flex-direction: column;
   padding-left:25px;
   margin-bottom: 20px;
+  @media(min-width:800px){
+    padding-left:15px;
+}
 `;
 const ImageCol = styled(Col)`
   
@@ -47,10 +55,10 @@ const ImageCol = styled(Col)`
   @media(min-width:800px){
     
    display:flex;
-   width:100%;
+  
    justify-content: center;
     height:auto;
-    max-height:100vh;
+   
   }
 `;
 const Title = styled.h3`
@@ -62,12 +70,16 @@ const Title = styled.h3`
 const DescriptionBox = styled.section`
   display: flex;
   flex-direction: column;
+  @media(min-width:800px){}
   p {
     margin: 0;
     font-size: 0.9rem;
     /* line-height: 25px;   TO SETTLE! */
   }
+
 `;
+
+
 const ImgRow = styled(Row)`
  
 `;
@@ -78,6 +90,10 @@ const Img = styled(Image)`
   padding: 0 10px;
   @media(min-width:800px){
     margin-top:0;
+    margin-right: 10%;
+    max-height:87vh;
+    max-width: 460px;
+    width:auto;
   }
 `;
 
