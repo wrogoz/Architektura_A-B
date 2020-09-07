@@ -37,11 +37,11 @@ const SingleProject = (props) => {
 const SingleProjectCol = styled(Col)`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left:25px;
   margin-bottom: 20px;
 `;
 const ImageCol = styled(Col)`
-  /* max-height: 60vh;  bo beatka chciala*/
+  
   margin-bottom: 20px;
   overflow: hidden;
   @media(min-width:800px){
@@ -65,7 +65,7 @@ const DescriptionBox = styled.section`
   p {
     margin: 0;
     font-size: 0.9rem;
-    line-height: 25px;
+    /* line-height: 25px;   TO SETTLE! */
   }
 `;
 const ImgRow = styled(Row)`
