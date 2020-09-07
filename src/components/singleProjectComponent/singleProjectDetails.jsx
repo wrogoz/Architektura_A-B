@@ -7,7 +7,7 @@ import Image from "react-bootstrap/Image";
 const SingleProject = (props) => {
   const imageList = props.arrayOfImages.map((el) => {
     return (
-      <ImageCol xs={12} key={el}>
+      <ImageCol xs={12}  key={el}>
         <Img  src={el} />
       </ImageCol>
     );
@@ -15,8 +15,8 @@ const SingleProject = (props) => {
 
   return (
     <SingleProjectContainer>
-      <Row>
-        <SingleProjectCol  xs={12}>
+      <DescriptionRow>
+        <SingleProjectCol  xs={12}  >
           <DescriptionBox>
             <Title>{props.projectName}</Title>
             <p>Lokalizacja:{props.location}</p>
@@ -28,7 +28,7 @@ const SingleProject = (props) => {
             <p>Autorzy:{props.authors} </p>
           </DescriptionBox>
         </SingleProjectCol>
-      </Row>
+      </DescriptionRow>
       <ImgRow >{imageList}</ImgRow>
     </SingleProjectContainer>
   );
@@ -39,6 +39,12 @@ const SingleProjectContainer = styled.section`
 }
 
 `
+const DescriptionRow = styled(Row)`
+    @media(min-width:800px){
+      width:41%;
+      
+    }
+  `
 const SingleProjectCol = styled(Col)`
   display: flex;
   flex-direction: column;
@@ -49,14 +55,14 @@ const SingleProjectCol = styled(Col)`
 }
 `;
 const ImageCol = styled(Col)`
-  
+ 
   margin-bottom: 20px;
   overflow: hidden;
   @media(min-width:800px){
     
    display:flex;
-  
-   justify-content: center;
+  padding-left:10%;
+   
     height:auto;
    
   }
@@ -87,11 +93,11 @@ const ImgRow = styled(Row)`
 const Img = styled(Image)`
   width: 100%;
   max-width:700px;
-  
+
   padding: 0 10px;
   @media(min-width:800px){
     margin-top:0;
-    margin-right: 10%;
+    
     max-height:87vh;
     max-width: 460px;
     width:auto;
