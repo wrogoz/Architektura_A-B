@@ -48,7 +48,7 @@ function App() {
           <HomePage />
         </Route>
         <Route path="*" >
-          <p>404</p>
+          <HomePage/>
         </Route>
       </Switch>
 
