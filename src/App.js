@@ -11,7 +11,7 @@ import SwimmingPool from "./components/architecture-elements/singleArchitectureP
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/header";
 import Contact from './components/contact'
-import './app.css'
+
 function App() {
   return (
     <StyledContainer fluid>
