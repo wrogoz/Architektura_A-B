@@ -34,7 +34,7 @@ position:relative;
   max-height: 35vh;
   max-width:40vw;
   overflow: hidden;
-  margin:15px;
+  margin:7px;
   
   
 `;
@@ -48,10 +48,10 @@ left:0;
   height:100%;
   width:100%;
   opacity:0;
-  background:#cccccc30;
+  background:#ffffff90;
  
   p{
-    color:#fff;
+    color:#000;
     font-size:2rem;
     text-transform:uppercase;
    
