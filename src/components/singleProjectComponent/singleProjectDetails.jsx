@@ -98,7 +98,7 @@ const Img = styled(Image)`
   @media(min-width:800px){
     margin-top:0;
     
-    max-height:87vh;
+    height:87vh;
     max-width: 460px;
     width:auto;
   }
