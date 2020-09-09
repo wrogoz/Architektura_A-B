@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Container from "react-bootstrap/Container";
 import HomePage from "./components/homePage";
 import Entries from "./components/entries";
-import Footer from "./components/footer";
+
 import Architecture from "./components/architecture";
 import Bathroom from "./components/entries-elements/singleEntriesProjects/bathroom";
 import SwimmingPool from "./components/architecture-elements/singleArchitectureProjects/swimmingPool";
