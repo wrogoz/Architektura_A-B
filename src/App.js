@@ -60,7 +60,7 @@ function App() {
 
 const StyledContainer = styled(Container)`
   padding: 10px;
- 
+ width:98%;
   font-family: interblack;
   display: flex;
 
