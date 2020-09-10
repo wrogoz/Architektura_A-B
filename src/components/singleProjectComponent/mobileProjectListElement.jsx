@@ -15,7 +15,7 @@ const MobileProjectElement = (props)=>{
     return(
         <Col sm={12}>
         <Link to={props.path} onClick={hideMobileMenu}>
-    <ProjectTitle>{props.title}</ProjectTitle>
+    
           <ImgBox>
             <Img src={props.imgSrc} rounded />
           </ImgBox>
@@ -23,14 +23,14 @@ const MobileProjectElement = (props)=>{
       </Col>
     )
 }
-const ProjectTitle = styled.h2`
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
-  color: #000;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-`;
+// const ProjectTitle = styled.h2`
+//   font-size: 1rem;
+//   font-weight: bold;
+//   text-align: center;
+//   color: #000;
+//   letter-spacing: 4px;
+//   text-transform: uppercase;
+//                                      do zatwierdzenia`;     
 const Img = styled(Image)`
   width: 100%;
   margin-top: -18%;

@@ -8,7 +8,7 @@ import styled from 'styled-components'
 
 const DesktopEntries = (props) => {
   
-    // to do: create array with object {title,imgsrc,path} to display
+    // to do: create array with object {title,subtitle,imgsrc,path} to display
 
   return (
     <DesktopEntriesContainer noGutters={true}>
@@ -16,25 +16,29 @@ const DesktopEntries = (props) => {
      
       imgSrc={bathroom}
       path='/entries/bathroom'
-      title="Entries project"
+      title="Dom jednorodzinny"
+      subTitle="Wnętrza"
       />
       <DesktopProjectElement
      
       imgSrc={bathroom}
       path='/entries/bathroom'
-      title="Entries project"
+      title="Dom jednorodzinny"
+      subTitle="Wnętrza"
       />
      <DesktopProjectElement
     
       imgSrc={bathroom}
       path='/entries/bathroom'
-      title="Entries project"
+      title="Dom jednorodzinny"
+      subTitle="Wnętrza"
       />
       <DesktopProjectElement
   
       imgSrc={bathroom}
       path='/entries/bathroom'
-      title="Entries project"
+      title="Dom jednorodzinny"
+      subTitle="Wnętrza"
       />
     </DesktopEntriesContainer>
   );

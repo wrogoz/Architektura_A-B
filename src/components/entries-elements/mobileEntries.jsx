@@ -13,22 +13,22 @@ const MobileEntries = (props) => {
   return (
     <Row>
       <MobileProjectElement
-      title="Project 1"
+     
       imgSrc={bathroom}
       path='/entries/bathroom'
       />
       <MobileProjectElement
-      title="Project 2"
+      
       imgSrc={bathroom}
       path='/entries/bathroom'
       />
       <MobileProjectElement
-      title="Project 3"
+    
       imgSrc={bathroom}
       path='/entries/bathroom'
       />
       <MobileProjectElement
-      title="Project 4"
+     
       imgSrc={bathroom}
       path='/entries/bathroom'
       />
