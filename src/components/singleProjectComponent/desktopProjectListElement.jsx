@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {Link} from 'react-router-dom';
 import Col from 'react-bootstrap/Col'
 import {Image} from 'react-bootstrap'
-import GlobalFonts from "../../assets/fonts/inter/fonts"
+
 const DesktopProjectElement = (props)=>{
 
    
