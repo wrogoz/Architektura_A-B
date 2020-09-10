@@ -55,13 +55,14 @@ const SingleProjectCol = styled(Col)`
 }
 `;
 const ImageCol = styled(Col)`
- 
+  justify-content: center;
+  display: flex;
   margin-bottom: 20px;
   overflow: hidden;
   @media(min-width:800px){
     
-   display:flex;
-  padding-left:10%;
+   justify-content:flex-start;
+
    
     height:auto;
    
@@ -81,7 +82,7 @@ const DescriptionBox = styled.section`
   p {
     margin: 0;
     font-size: 0.9rem;
-    /* line-height: 25px;   TO SETTLE! */
+   
   }
 
 `;
@@ -97,9 +98,8 @@ const Img = styled(Image)`
   padding: 0 10px;
   @media(min-width:800px){
     margin-top:0;
-    
-    max-height:87vh;
-    max-width: 460px;
+    max-width:66%;
+   
     width:auto;
   }
 `;
