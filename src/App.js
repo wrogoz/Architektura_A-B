@@ -1,5 +1,5 @@
 import React from "react";
-import GlobalFonts from "./assets/fonts/inter/fonts";
+import {GlobalStyles} from "./globalStyles";
 import styled from "styled-components";
 import Container from "react-bootstrap/Container";
 import HomePage from "./components/homePage";
@@ -15,7 +15,7 @@ import Contact from './components/contact'
 function App() {
   return (
     <StyledContainer fluid>
-      <GlobalFonts />
+      <GlobalStyles />
 
       <Header />
 
