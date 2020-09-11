@@ -64,12 +64,12 @@ const StyledContainer = styled(Container)`
   font-family: interblack;
   display: flex;
 
-  justify-content: center;
+  
   min-height: 100vh;
   flex-direction: column;
   font-size: 0.7rem;
   @media(min-width:800px){
-    padding:2%
+    padding:10px;
   }
 `;
 

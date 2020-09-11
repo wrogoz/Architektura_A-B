@@ -7,7 +7,7 @@ import styled from 'styled-components'
 
 
 const DesktopArchitecture = (props) => {
-  
+ 
     // to do: create array with object {title,imgsrc,path} to display
 
   return (
@@ -16,25 +16,29 @@ const DesktopArchitecture = (props) => {
      
       imgSrc={bathroom}
       path='/architecture/swimmingPool'
-      title='Architecture project'
+      title='Architecture'
+      subTitle="project"
       />
       <DesktopProjectElement
      
       imgSrc={bathroom}
       path='/architecture/swimmingPool'
       title= 'Architecture project'
+      subTitle="project"
       />
      <DesktopProjectElement
     
       imgSrc={bathroom}
       path='/architecture/swimmingPool'
       title= 'Architecture project'
+      subTitle="project"
       />
       <DesktopProjectElement
   
       imgSrc={bathroom}
       path='/architecture/swimmingPool'
       title= 'Architecture project'
+      subTitle="project"
       />
     </DesktopArchitectureRow>
   );
