@@ -41,7 +41,7 @@ const SingleProjectContainer = styled.section`
 `
 const DescriptionRow = styled(Row)`
     @media(min-width:800px){
-      width:41%;
+      width:30%;
       
     }
   `
@@ -60,9 +60,9 @@ const ImageCol = styled(Col)`
   margin-bottom: 20px;
   overflow: hidden;
   @media(min-width:800px){
-    
+    padding-right:15%;
    display:flex;
-  justify-content:flex-start;
+  
    
     height:auto;
    
@@ -89,7 +89,7 @@ const DescriptionBox = styled.section`
 
 
 const ImgRow = styled(Row)`
- 
+  width:70;
 `;
 const Img = styled(Image)`
   width: 100%;
@@ -98,7 +98,7 @@ const Img = styled(Image)`
   padding: 0 10px;
   @media(min-width:800px){
     margin-top:0;
-    max-width:66%;
+    max-width:50%;
     /* max-height:87vh;
     max-width: 460px;             TO Settle*/
     width:auto;
