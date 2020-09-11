@@ -1,39 +1,14 @@
-import React from "react";
+import React from 'react'
+import Row from 'react-bootstrap/Row'
+import {architectureListData} from './architectureListData'
 
-import Row from "react-bootstrap/Row";
 
-import bathroom from "../../images/entries/bathroom/01_1.jpg";
-
-import MobileProjectElement from '../singleProjectComponent/mobileProjectListElement';
+import MobileProjectElement from '../singleProjectComponent/mobileProjectListElement'
 const MobileArchitecture = () => {
-
-  return (
-    <Row>
-
-<MobileProjectElement
-      
-      imgSrc={bathroom}
-      path='/architecture/swimmingPool'
-      />
-      <MobileProjectElement
-      
-      imgSrc={bathroom}
-      path='/architecture/swimmingPool'
-      />
-      <MobileProjectElement
-      
-      imgSrc={bathroom}
-      path='/architecture/swimmingPool'
-      />
-      <MobileProjectElement
-      
-      imgSrc={bathroom}
-      path='/architecture/swimmingPool'
-      />
-    </Row>
-  );
-};
-
-
+  const architectureList = architectureListData.map((el,i) => {
+    return <MobileProjectElement key={i} imgSrc={el.imgSrc} path={el.path} />
+  })
+  return <Row>{architectureList}</Row>
+}
 
 export default MobileArchitecture

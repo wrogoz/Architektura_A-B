@@ -1,37 +1,25 @@
 import React from "react";
-import bathroom from "../../images/entries/bathroom/01_1.jpg";
 import Row from "react-bootstrap/Row";
-
+import {entriesListData} from "./entriesListData"
 import MobileProjectElement from "../singleProjectComponent/mobileProjectListElement";
 
 
 
 const MobileEntries = (props) => {
   
-    // to do: create array with object {title,imgsrc,path} to display
-
+  const entriesList = entriesListData.map((el,i) => {
+    return (
+      <MobileProjectElement
+        key={i}
+        imgSrc={el.imgSrc}
+        path={el.path}
+      />
+    )
+  })
+  
   return (
     <Row>
-      <MobileProjectElement
-     
-      imgSrc={bathroom}
-      path='/entries/bathroom'
-      />
-      <MobileProjectElement
-      
-      imgSrc={bathroom}
-      path='/entries/bathroom'
-      />
-      <MobileProjectElement
-    
-      imgSrc={bathroom}
-      path='/entries/bathroom'
-      />
-      <MobileProjectElement
-     
-      imgSrc={bathroom}
-      path='/entries/bathroom'
-      />
+      {entriesList}
     </Row>
   );
 };

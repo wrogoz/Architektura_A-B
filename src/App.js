@@ -69,7 +69,7 @@ const StyledContainer = styled(Container)`
   flex-direction: column;
   font-size: 0.7rem;
   @media(min-width:800px){
-    padding:10px;
+    padding:15px;
   }
 `;
 

@@ -1,45 +1,26 @@
 import React from "react";
-import bathroom from "../../images/entries/bathroom/01_1.jpg";
 import Row from "react-bootstrap/Row";
 import DesktopProjectElement from '../singleProjectComponent/desktopProjectListElement'
 import styled from 'styled-components'
-
+import {entriesListData} from './entriesListData'
 
 
 const DesktopEntries = (props) => {
   
-    // to do: create array with object {title,subtitle,imgsrc,path} to display
-
+  const entriesList = entriesListData.map((el,i) => {
+    return (
+      <DesktopProjectElement
+        key={i}
+        imgSrc={el.imgSrc}
+        path={el.path}
+        title={el.title}
+        subTitle={el.subtitle}
+      />
+    )
+  })
   return (
     <DesktopEntriesContainer noGutters={true}>
-      <DesktopProjectElement
-     
-      imgSrc={bathroom}
-      path='/entries/bathroom'
-      title="Dom jednorodzinny"
-      subTitle="Wnętrza"
-      />
-      <DesktopProjectElement
-     
-      imgSrc={bathroom}
-      path='/entries/bathroom'
-      title="Dom jednorodzinny"
-      subTitle="Wnętrza"
-      />
-     <DesktopProjectElement
-    
-      imgSrc={bathroom}
-      path='/entries/bathroom'
-      title="Dom jednorodzinny"
-      subTitle="Wnętrza"
-      />
-      <DesktopProjectElement
-  
-      imgSrc={bathroom}
-      path='/entries/bathroom'
-      title="Dom jednorodzinny"
-      subTitle="Wnętrza"
-      />
+      {entriesList}
     </DesktopEntriesContainer>
   );
 };
