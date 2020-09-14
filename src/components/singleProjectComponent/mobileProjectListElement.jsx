@@ -23,23 +23,24 @@ const MobileProjectElement = (props)=>{
       </Col>
     )
 }
-// const ProjectTitle = styled.h2`
-//   font-size: 1rem;
-//   font-weight: bold;
-//   text-align: center;
-//   color: #000;
-//   letter-spacing: 4px;
-//   text-transform: uppercase;
-//                                      do zatwierdzenia`;     
+   
 const Img = styled(Image)`
   width: 100%;
   margin-top: -18%;
   padding: 0 10px;
+  @media(orientation:landscape ){
+    width:50%;
+  }
 `;
 const ImgBox = styled.div`
   height: 35vh;
   overflow: hidden;
   margin-bottom: 20px;
+  @media(orientation:landscape ){
+    height:auto;
+    display:flex;
+    justify-content:center;
+  }
 `;
 
 const mapStateToProps = (state)=>{

@@ -96,6 +96,9 @@ const Img = styled(Image)`
   max-width:700px;
 
   padding: 0 10px;
+  @media(orientation:landscape ){
+  width:38%;
+}
   @media(min-width:800px){
     margin-top:0;
     max-width:50%;

@@ -35,15 +35,22 @@ const Slider = styled(Carousel)`
   position: relative;
   overflow: hidden;
   margin:0 auto;
+ 
+  
 `;
 const SliderImage = styled(Image)`
   height: 75vh;
   width: auto;
  
   overflow: hidden;
-  /* @media(max-height:641px){
-    max-height:65vh;
-  } */
+ 
+  
+  @media(orientation:landscape ){
+  height:69vh;
+  margin:0 auto;
+}
+
+
   @media (min-width: 800px) {
     height: auto;
     max-height:84vh;
