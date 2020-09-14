@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <Row>
       <HomeBox>
-        <Slider indicators={false} controls={false} pause={false}>
+        <Slider indicators={false} controls={false} pause={false} touch={false}>
           <Carousel.Item>
             <SliderImage className="d-block " src={img1} alt="First slide" />
           </Carousel.Item>
