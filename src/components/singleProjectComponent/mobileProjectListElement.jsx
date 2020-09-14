@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col'
 import {Image} from 'react-bootstrap'
 import {connect} from 'react-redux'
 import {showHideMobileMenu} from '../../redux/actions'
+
 const MobileProjectElement = (props)=>{
 
     const hideMobileMenu = () => {

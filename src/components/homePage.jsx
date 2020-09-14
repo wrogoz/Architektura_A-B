@@ -1,24 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import Carousel from "react-bootstrap/Carousel";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
-import img1 from "../images/startPage/img1.jpg";
-import img2 from "../images/startPage/img2.jpg";
+import HomePageSlider from './homePage-elements/homeSlider'
 
 const HomePage = () => {
   return (
     <Row>
       <HomeBox>
-        <Slider indicators={false} controls={false} pause={false} touch={false}>
-          <Carousel.Item>
-            <SliderImage className="d-block " src={img1} alt="First slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <SliderImage className="d-block " src={img2} alt="second slide" />
-          </Carousel.Item>
-        </Slider>
+        <HomePageSlider/>
       </HomeBox>
     </Row>
   );
@@ -30,34 +20,5 @@ const HomeBox = styled(Col)`
   
 `;
 
-const Slider = styled(Carousel)`
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  margin:0 auto;
- 
-  
-`;
-const SliderImage = styled(Image)`
-  height: 75vh;
-  width: auto;
- 
-  overflow: hidden;
- 
-  
-  @media(orientation:landscape ){
-  height:69vh;
-  margin:0 auto;
-}
 
-
-  @media (min-width: 800px) {
-    height: auto;
-    max-height:84vh;
-    margin:0 auto;
-    overflow: hidden;
-    width:100%;
-    
-  }
-`;
 export default HomePage;
