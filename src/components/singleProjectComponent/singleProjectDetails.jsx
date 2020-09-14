@@ -56,6 +56,7 @@ const SingleProjectCol = styled(Col)`
 `;
 const ImageCol = styled(Col)`
  justify-content: center;
+ align-items:flex-start;
   display: flex;
   margin-bottom: 20px;
   overflow: hidden;
@@ -94,7 +95,7 @@ const ImgRow = styled(Row)`
 const Img = styled(Image)`
   width: 100%;
   max-width:700px;
-
+  
   padding: 0 10px;
   @media(orientation:landscape ){
   width:38%;
