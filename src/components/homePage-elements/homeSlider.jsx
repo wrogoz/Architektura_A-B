@@ -4,14 +4,21 @@ import Carousel from "react-bootstrap/Carousel"
 import Image from "react-bootstrap/Image"
 import {mobileImages,desktopImages} from './imagesData'
 import { connect } from 'react-redux'
-import { changeWindowWidth} from '../../redux/actions';
+import { changeWindowWidth,changeWindowHeight} from '../../redux/actions';
 
  
 
 
         const HomePageSlider = (props)=>{
           let imagesToDisplay;
-            props.WindowWidth<800?imagesToDisplay=mobileImages:imagesToDisplay=desktopImages;
+          
+           if( props.WindowWidth/props.WindowHeight<1){
+            
+            imagesToDisplay=mobileImages
+           }else{
+            imagesToDisplay=desktopImages;
+           }
+            
           const sliderImages = imagesToDisplay.map((el,i)=>{
 
 
@@ -32,6 +39,7 @@ import { changeWindowWidth} from '../../redux/actions';
 
            {window.addEventListener('resize',()=>{
           props.dispatch(changeWindowWidth(window.innerWidth))
+          props.dispatch(changeWindowHeight(window.innerHeight))
           
         })}
         </Slider>
@@ -74,7 +82,8 @@ margin:0 auto;
 `;
 const mapStateToProps = (state) => {
   return {
-    WindowWidth: state.WindowWidth
+    WindowWidth: state.WindowWidth,
+    WindowHeight: state.WindowHeight
 
   };
 };

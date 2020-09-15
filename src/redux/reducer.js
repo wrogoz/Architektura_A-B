@@ -1,6 +1,7 @@
 
 const initialState = {
     WindowWidth:window.innerWidth,
+    WindowHeight:window.innerHeight,
     isMenuOpen:false
    }
   
@@ -11,6 +12,12 @@ const initialState = {
           return{
             ...state,
             WindowWidth:action.width
+           
+          }
+          case 'CHANGEWINDOWHEIGHT':
+          return{
+            ...state,
+            WindowHeight:action.height
            
           }
           case "SHOWHIDEMOBILEMENU":

@@ -4,6 +4,14 @@ export const changeWindowWidth = (width) => {
     width,
   };
 };
+
+export  const changeWindowHeight = (height)=>{
+  return {
+    type:"CHANGEWINDOWHEIGHT",
+    height
+  };
+}
+
 export const showHideMobileMenu = () => {
   return { type: "SHOWHIDEMOBILEMENU" };
 };
