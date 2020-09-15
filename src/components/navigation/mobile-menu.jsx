@@ -8,6 +8,7 @@ const MobileMenu = (props) => {
   const mobileNav = createRef(null)
   useEffect(() => {
     gsap.from(mobileNav.current,{height:"0px",opacity:0})
+    // eslint-disable-next-line 
   }, [])
 
   return (
