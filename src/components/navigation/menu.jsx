@@ -1,10 +1,18 @@
-import React from "react";
+import React,{useEffect,createRef} from "react";
+import gsap from 'gsap'
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Menu = () => {
+
+const navRef = createRef(null)
+
+useEffect(() => {
+  gsap.from(navRef.current.children, {opacity:0,stagger:0.2,x:30,duration:1.4,ease:"power4.out",delay:0.3})
+}, [navRef])
+
   return (
-    <Ul>
+    <Ul ref={navRef}>
       <li>
         <NavLink to="/projekty">Projekty</NavLink>
       </li>

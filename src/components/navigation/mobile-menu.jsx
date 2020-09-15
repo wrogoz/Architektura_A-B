@@ -1,11 +1,20 @@
-import React from "react";
+import React,{createRef,useEffect} from "react";
 import styled from "styled-components";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
+import gsap from "gsap"
 const MobileMenu = (props) => {
+
+  const mobileNav = createRef(null)
+  useEffect(() => {
+    gsap.from(mobileNav.current,{height:"0px",opacity:0})
+  }, [])
+
   return (
     <Nav xs={12}>
-      <ul onClick={props.onClick}>
+      <ul onClick={props.onClick}
+          ref={mobileNav}
+          >
         <li>
           <StyledLink to="/">Strona główna</StyledLink>
         </li>
