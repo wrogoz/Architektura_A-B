@@ -9,7 +9,8 @@ const navRef = createRef(null)
 
 useEffect(() => {
   gsap.from(navRef.current.children, {opacity:0,stagger:0.2,x:30,duration:1.4,ease:"power4.out",delay:0.3})
-}, [navRef])
+// eslint-disable-next-line 
+}, [])
 
   return (
     <Ul ref={navRef}>
