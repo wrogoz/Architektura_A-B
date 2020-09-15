@@ -17,6 +17,6 @@ export const GlobalStyles= createGlobalStyle`
         font-style:normal;       
     }
     body{
-    
+        overflow-x:hidden;
     }
 `
