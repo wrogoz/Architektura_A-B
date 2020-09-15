@@ -1,11 +1,12 @@
-import React from 'react';
+import React,{createRef,useEffect} from "react";
 import Row from 'react-bootstrap/Row';
 import DesktopProjectElement from '../singleProjectComponent/desktopProjectListElement';
 import styled from 'styled-components';
 import {architectureListData} from './architectureListData'
-
+import gsap from 'gsap'
 
 const DesktopArchitecture = (props) => {
+  const imagesRef=createRef(null)
   const architectureList = architectureListData.map((el,i) => {
     return (
       <DesktopProjectElement
@@ -17,9 +18,12 @@ const DesktopArchitecture = (props) => {
       />
     )
   })
-
+  useEffect(() => {
+    gsap.from(imagesRef.current.children,{opacity:0,duration:0.6,stagger:0.2,ease: "steps(12)",delay:0.5})
+    // eslint-disable-next-line 
+  }, [])
   return (
-    <DesktopArchitectureRow noGutters={true}>
+    <DesktopArchitectureRow noGutters={true} ref={imagesRef}>
       {architectureList}
     </DesktopArchitectureRow>
   );
