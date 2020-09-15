@@ -46,6 +46,9 @@ const HeaderBox = styled.header`
 `;
 const HeaderRow= styled(Row)`
   align-items:center;
+  & a{
+    outline: none;
+  }
 `
 const Logo = styled.img`
   width: 70px;
