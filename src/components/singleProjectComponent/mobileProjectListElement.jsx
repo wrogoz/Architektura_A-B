@@ -37,6 +37,8 @@ const ImgBox = styled.div`
   height: 35vh;
   overflow: hidden;
   margin-bottom: 20px;
+  display:flex;
+  align-items:flex-start;
   @media(orientation:landscape ){
     height:auto;
     display:flex;
