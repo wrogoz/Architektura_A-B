@@ -43,6 +43,7 @@ const Header = (props) => {
 const HeaderBox = styled.header`
   margin-bottom: 20px;
   text-transform: uppercase;
+  overflow:hidden;
 `;
 const HeaderRow= styled(Row)`
   align-items:center;
