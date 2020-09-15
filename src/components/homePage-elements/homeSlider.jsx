@@ -50,7 +50,7 @@ import { changeWindowWidth,changeWindowHeight} from '../../redux/actions';
         }
 
 const SliderImage = styled(Image)`
-  height: 75vh;
+  height: 80vh;
   width: auto;
   margin:0 auto;
   overflow: hidden;
