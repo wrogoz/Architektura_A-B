@@ -44,6 +44,9 @@ const HeaderBox = styled.header`
   margin-bottom: 20px;
   text-transform: uppercase;
   overflow:hidden;
+  @media(min-width:800px){
+    width:98vw;
+  }
 `;
 const HeaderRow= styled(Row)`
   align-items:center;
