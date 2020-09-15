@@ -65,7 +65,7 @@ const Title = styled.p`
    color:#000;
     font-size:1.2rem;
     text-transform:uppercase;
-    margin-bottom:0.4rem;
+    margin-bottom:0;
 `
 const SubTitle = styled.p`
    color:#000;
