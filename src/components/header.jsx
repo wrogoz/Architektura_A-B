@@ -1,4 +1,4 @@
-import React from "react";
+import React,{createRef} from "react";
 import styled from "styled-components";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -9,9 +9,20 @@ import MobileMenu from "./navigation/mobile-menu";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { changeWindowWidth, showHideMobileMenu } from "../redux/actions";
+import gsap from 'gsap'
 const Header = (props) => {
+  const mobileNavRef = createRef(null)
+  const tl = gsap.timeline()
+ 
+
+
   const showHideMenu = () => {
     props.dispatch(showHideMobileMenu());
+    if(!props.isMenuOpen){
+      tl.to(mobileNavRef.current,{height:"auto"})
+    }else{
+      tl.to(mobileNavRef.current,{height:"0"})
+    }
   };
 
   return (
@@ -30,7 +41,7 @@ const Header = (props) => {
           )}
         </Nav>
 
-        {props.isMenuOpen ? <MobileMenu onClick={showHideMenu} /> : null}
+        {props.WindowWidth <800? <MobileMenu onClick={showHideMenu} ref={mobileNavRef} /> :null}
       </HeaderRow>
 
       {window.addEventListener("resize", () => {

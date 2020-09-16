@@ -1,20 +1,15 @@
-import React,{createRef,useEffect} from "react";
+import React from "react";
 import styled from "styled-components";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
-import gsap from "gsap"
-const MobileMenu = (props) => {
 
-  const mobileNav = createRef(null)
-  useEffect(() => {
-    gsap.from(mobileNav.current,{height:"0px",opacity:0})
-    // eslint-disable-next-line 
-  }, [])
+const MobileMenu =React.forwardRef((props,ref) => {
 
+  
   return (
     <Nav xs={12}>
       <ul onClick={props.onClick}
-          ref={mobileNav}
+          ref={ref}
           >
         <li>
           <StyledLink to="/">Strona główna</StyledLink>
@@ -33,13 +28,14 @@ const MobileMenu = (props) => {
         </li>
       </ul>
     </Nav>
-  );
-};
+  )
+});
 
 const Nav = styled(Col)`
   display: flex;
   justify-content: center;
   ul {
+    height:0;
     display: flex;
     flex-direction: column;
     list-style: none;
