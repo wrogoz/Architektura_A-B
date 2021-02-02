@@ -19,13 +19,15 @@ const SingleProject = (props) => {
         <SingleProjectCol  xs={12}  >
           <DescriptionBox>
             <Title>{props.projectName}</Title>
+            <p>Autorzy:{props.authors} </p>
             <p>Lokalizacja:{props.location}</p>
-            <p>Klient:{props.client}</p>
+            <p>Projekt:{props.project}</p>
+            <p>Realizacja:{props.realization} </p>
             <p>
               Powierzchnia:{props.size} m<sup>2</sup>
             </p>
-            <p>Status:{props.status} </p>
-            <p>Autorzy:{props.authors} </p>
+
+
           </DescriptionBox>
         </SingleProjectCol>
       </DescriptionRow>
@@ -41,8 +43,10 @@ const SingleProjectContainer = styled.section`
 `
 const DescriptionRow = styled(Row)`
     @media(min-width:800px){
-      width:30%;
-      
+      width:25%;
+      position:absolute;
+      z-index:1000;
+
     }
   `
 const SingleProjectCol = styled(Col)`
@@ -61,12 +65,12 @@ const ImageCol = styled(Col)`
   margin-bottom: 20px;
   overflow: hidden;
   @media(min-width:800px){
-    padding-right:15%;
+
    display:flex;
-  
-   
+
+
     height:auto;
-   
+
   }
 `;
 const Title = styled.h3`
@@ -95,14 +99,13 @@ const ImgRow = styled(Row)`
 const Img = styled(Image)`
   width: 100%;
   max-width:700px;
-  
   padding: 0 10px;
   @media(orientation:landscape ){
   width:38%;
 }
   @media(min-width:800px){
     margin-top:0;
-    max-width:50%;
+    max-width:35%;
     /* max-height:87vh;
     max-width: 460px;             TO Settle*/
     width:auto;

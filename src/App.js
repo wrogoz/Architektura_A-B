@@ -6,8 +6,11 @@ import HomePage from "./components/homePage";
 import Entries from "./components/entries";
 
 import Architecture from "./components/architecture";
-import Bathroom from "./components/entries-elements/singleEntriesProjects/bathroom";
-import SwimmingPool from "./components/architecture-elements/singleArchitectureProjects/swimmingPool";
+import KuchniaBytomB6 from './components/entries-elements/EntryPages/kuchnia_bytom_b6'
+import KuchniaBytomB2 from './components/entries-elements/EntryPages/kuchnia_bytom_b2'
+import DomJednorodzinnyC7 from './components/entries-elements/EntryPages/domCieszynC7'
+
+import SwimmingPool from "./components/architecture-elements/ArchitecturePages/swimmingPool";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/header";
 import Contact from './components/contact'
@@ -32,10 +35,16 @@ function App() {
         <Route path="/architecture">
           <Architecture />
         </Route>
-        
 
-        <Route exact path="/entries/bathroom">
-          <Bathroom />
+
+        <Route exact path="/entries/domCieszynC7">
+          <DomJednorodzinnyC7 />
+        </Route>
+        <Route exact path="/entries/kuchnia_bytom_B2">
+          <KuchniaBytomB2 />
+        </Route>
+        <Route exact path="/entries/kuchnia_bytom_b6">
+          <KuchniaBytomB6 />
         </Route>
         <Route path="/entries">
           <Entries />
@@ -53,18 +62,18 @@ function App() {
         </Route>
       </Switch>
 
-     
+
     </StyledContainer>
   );
 }
 
 const StyledContainer = styled(Container)`
   padding: 10px;
- 
+
   font-family: interblack;
   display: flex;
 
-  
+
   min-height: 100vh;
   flex-direction: column;
   font-size: 0.7rem;

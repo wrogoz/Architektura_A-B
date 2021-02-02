@@ -16,7 +16,7 @@ const MobileProjectElement = (props)=>{
     return(
         <Col sm={12}>
         <Link to={props.path} onClick={hideMobileMenu}>
-    
+
           <ImgBox>
             <Img src={props.imgSrc} rounded />
           </ImgBox>
@@ -24,19 +24,19 @@ const MobileProjectElement = (props)=>{
       </Col>
     )
 }
-   
+
 const Img = styled(Image)`
   width: 100%;
-  margin-top: -18%;
+
   padding: 0 10px;
   @media(orientation:landscape ){
     width:50%;
   }
 `;
 const ImgBox = styled.div`
-  height: 35vh;
+
   overflow: hidden;
-  margin-bottom: 20px;
+  margin:10px 0;
   display:flex;
   align-items:flex-start;
   @media(orientation:landscape ){
