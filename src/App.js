@@ -9,7 +9,8 @@ import Architecture from "./components/architecture";
 import KuchniaBytomB6 from './components/entries-elements/EntryPages/kuchnia_bytom_b6'
 import KuchniaBytomB2 from './components/entries-elements/EntryPages/kuchnia_bytom_b2'
 import DomJednorodzinnyC7 from './components/entries-elements/EntryPages/domCieszynC7'
-
+import ApartamentKatowiceK18 from './components/entries-elements/EntryPages/apartamentKatowiceK18.jsx'
+import DomPsaryP7 from './components/entries-elements/EntryPages/domPsaryP7'
 import SwimmingPool from "./components/architecture-elements/ArchitecturePages/swimmingPool";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/header";
@@ -45,6 +46,12 @@ function App() {
         </Route>
         <Route exact path="/entries/kuchnia_bytom_b6">
           <KuchniaBytomB6 />
+        </Route>
+        <Route exact path="/entries/apartament_katowice_k18">
+          <ApartamentKatowiceK18 />
+        </Route>
+        <Route exact path="/entries/dom_jednorodzinny_psary_p7">
+          < DomPsaryP7/>
         </Route>
         <Route path="/entries">
           <Entries />
