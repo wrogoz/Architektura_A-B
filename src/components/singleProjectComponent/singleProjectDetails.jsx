@@ -99,7 +99,7 @@ const ImgRow = styled(Row)`
 `;
 const Img = styled(Image)`
   width: 100%;
-  max-width:550px;
+  max-width:650px;
   padding: 0 10px;
   @media(orientation:landscape ){
     /* max-width: 550px; */
