@@ -10,7 +10,8 @@ const LazienkaRogoznikR4 = () => {
   return (
     <SingleProject
     projectName="Kuchnia w kamienicy B2"
-    authors="A+B ARCHITEKTURA (ANNA WILK-TOKARCZYK, BEATA KOSOK)"
+    company="A+B ARCHITEKTURA"
+    authors="ANNA WILK-TOKARCZYK, BEATA KOSOK"
     location="Bytom"
     project="2016"
     realization="2017"

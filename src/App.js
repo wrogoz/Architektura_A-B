@@ -76,7 +76,7 @@ function App() {
 
 const StyledContainer = styled(Container)`
   padding: 10px;
-
+  padding-bottom:0;
   font-family: interblack;
   display: flex;
 
@@ -86,6 +86,7 @@ const StyledContainer = styled(Container)`
   font-size: 0.7rem;
   @media(min-width:800px){
     padding:15px;
+    padding-bottom:0;
   }
 `;
 

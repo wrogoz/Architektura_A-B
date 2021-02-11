@@ -20,7 +20,8 @@ const ApartamentKatowiceK18 = () => {
   return (
     <SingleProject
       projectName="Apartament Katowice K18"
-      authors="A+B ARCHITEKTURA (ANNA WILK-TOKARCZYK, BEATA KOSOK)"
+      company="A+B ARCHITEKTURA"
+      authors="ANNA WILK-TOKARCZYK, BEATA KOSOK"
       location="Katowice"
       project="2018"
       realization="2018"

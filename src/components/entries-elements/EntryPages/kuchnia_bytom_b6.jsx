@@ -9,7 +9,8 @@ const KuchniaBytomB6 = () => {
   return (
     <SingleProject
     projectName="Kuchnia B6"
-    authors="A+B ARCHITEKTURA (ANNA WILK-TOKARCZYK, BEATA KOSOK)"
+    company="A+B ARCHITEKTURA"
+    authors="ANNA WILK-TOKARCZYK, BEATA KOSOK"
     location="Bytom"
     project="2017"
     realization="2017"

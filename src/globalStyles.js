@@ -8,13 +8,13 @@ export const GlobalStyles= createGlobalStyle`
         font-family:interblack;
         src: url(${interblack}) format('woff');
         font-weight:normal;
-        font-style:normal;       
+        font-style:normal;
     }
     @font-face {
         font-family:interBlackBold;
         src: url(${interBlackBold}) format('woff');
         font-weight:normal;
-        font-style:normal;       
+        font-style:normal;
     }
     body{
         overflow-x:hidden;

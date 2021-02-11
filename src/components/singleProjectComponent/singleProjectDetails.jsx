@@ -19,12 +19,13 @@ const SingleProject = (props) => {
         <SingleProjectCol  xs={12}  >
           <DescriptionBox>
             <Title>{props.projectName}</Title>
-            <p>Autorzy:{props.authors} </p>
-            <p>Lokalizacja:{props.location}</p>
-            <p>Projekt:{props.project}</p>
-            <p>Realizacja:{props.realization} </p>
+            <p>Autorzy: {props.company} </p>
+            <p>{props.authors}</p>
+            <p>Lokalizacja: {props.location}</p>
+            <p>Projekt: {props.project}</p>
+            <p>Realizacja: {props.realization} </p>
             <p>
-              Powierzchnia:{props.size} m<sup>2</sup>
+              Powierzchnia: {props.size} m<sup>2</sup>
             </p>
 
 
@@ -98,14 +99,14 @@ const ImgRow = styled(Row)`
 `;
 const Img = styled(Image)`
   width: 100%;
-  max-width:700px;
+  max-width:550px;
   padding: 0 10px;
   @media(orientation:landscape ){
-  width:38%;
+    /* max-width: 550px; */
 }
   @media(min-width:800px){
     margin-top:0;
-    max-width:35%;
+    /* max-width: 550px; */
     /* max-height:87vh;
     max-width: 460px;             TO Settle*/
     width:auto;
