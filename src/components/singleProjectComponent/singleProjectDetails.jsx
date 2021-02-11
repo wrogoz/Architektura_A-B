@@ -98,7 +98,8 @@ const DescriptionBox = styled.section`
 
 
 const ImgRow = styled(Row)`
-
+  display:flex;
+  justify-content:center;
 `;
 const Img = styled(Image)`
   width: 100%;
