@@ -27,6 +27,9 @@ const SingleProject = (props) => {
             <p>
               Powierzchnia: {props.size} m<sup>2</sup>
             </p>
+            {props.photograph?
+            <p>Zdjęcia: {props.photograph}</p>
+            :null}
 
 
           </DescriptionBox>

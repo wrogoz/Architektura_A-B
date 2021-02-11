@@ -14,7 +14,7 @@ const DomCieszynC7 = () => {
     <SingleProject
       projectName="DOM JEDNORODZINNY C7"
       company="A+B ARCHITEKTURA"
-      authors="ANNA WILK-TOKARCZYK, BEATA KOSOK"
+      authors="Anna Wilk-Tokarczyk, Beata Kosok"
       location="CIESZYN"
       project="2017"
       realization="2017/18"

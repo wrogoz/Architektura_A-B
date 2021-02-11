@@ -19,13 +19,14 @@ import img13 from "../../../images/entries/apartament_katowice_k18/AB_K18_13.jpg
 const ApartamentKatowiceK18 = () => {
   return (
     <SingleProject
-      projectName="Apartament Katowice K18"
+      projectName="Apartament K18"
       company="A+B ARCHITEKTURA"
-      authors="ANNA WILK-TOKARCZYK, BEATA KOSOK"
+      authors="Anna Wilk-Tokarczyk, Beata Kosok"
       location="Katowice"
       project="2018"
       realization="2018"
       size="90"
+      photograph="Ola Jankowska Olikj.com"
 
 
       arrayOfImages={[img1, img2, img3, img4, img5,img6,img7,img8,img9,img10,img11,img12,img13]}

@@ -22,7 +22,7 @@ const DomPsaryP7 = () => {
     <SingleProject
       projectName="DOM JEDNORODZINNY P7"
       company="A+B ARCHITEKTURA"
-      authors="ANNA WILK-TOKARCZYK, BEATA KOSOK"
+      authors="Anna Wilk-Tokarczyk, Beata Kosok"
       location="Psary"
       project="2014"
       realization="2015"

@@ -10,7 +10,7 @@ const KuchniaBytomB2 = () => {
     <SingleProject
     projectName="Kuchnia w kamienicy B2"
     company="A+B ARCHITEKTURA"
-    authors="ANNA WILK-TOKARCZYK, BEATA KOSOK"
+    authors="Anna Wilk-Tokarczyk, Beata Kosok"
     location="Bytom"
     project="2016"
     realization="2017"
