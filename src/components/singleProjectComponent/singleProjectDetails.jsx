@@ -95,7 +95,7 @@ const DescriptionBox = styled.section`
 
 
 const ImgRow = styled(Row)`
-  width:70;
+
 `;
 const Img = styled(Image)`
   width: 100%;
