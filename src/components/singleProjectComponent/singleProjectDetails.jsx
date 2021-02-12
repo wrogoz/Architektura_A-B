@@ -19,16 +19,16 @@ const SingleProject = (props) => {
         <SingleProjectCol  xs={12}  >
           <DescriptionBox>
             <Title>{props.projectName}</Title>
-            <p>Autorzy: {props.company} </p>
+            <p>autorzy: {props.company} </p>
             <p>{props.authors}</p>
-            <p>Lokalizacja: {props.location}</p>
-            <p>Projekt: {props.project}</p>
-            <p>Realizacja: {props.realization} </p>
+            <p>lokalizacja: {props.location}</p>
+            <p>projekt: {props.project}</p>
+            <p>realizacja: {props.realization} </p>
             <p>
-              Powierzchnia: {props.size} m<sup>2</sup>
+              powierzchnia: {props.size} m<sup>2</sup>
             </p>
             {props.photograph?
-            <p>Zdjęcia: {props.photograph}</p>
+            <p>zdjęcia: {props.photograph}</p>
             :null}
 
 
@@ -77,11 +77,11 @@ const ImageCol = styled(Col)`
 
   }
 `;
-const Title = styled.h3`
-  font-size: 1rem;
+const Title = styled.p`
+  font-size: 0.9rem;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   margin-bottom:15px;
 `;
 const DescriptionBox = styled.section`
