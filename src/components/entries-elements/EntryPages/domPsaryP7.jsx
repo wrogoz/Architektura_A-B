@@ -15,8 +15,6 @@ import img12 from "../../../images/entries/dom_jednorodzinny_psary_P7/AB_PW7_12.
 import img13 from "../../../images/entries/dom_jednorodzinny_psary_P7/AB_PW7_13.jpg";
 import img14 from "../../../images/entries/dom_jednorodzinny_psary_P7/AB_PW7_14.jpg";
 
-
-
 const DomPsaryP7 = () => {
   return (
     <SingleProject
@@ -27,9 +25,22 @@ const DomPsaryP7 = () => {
       project="2014"
       realization="2015"
       size="183"
-
-
-      arrayOfImages={[img1, img2, img3, img4, img5,img6,img7,img8,img9,img10,img11,img12,img13,img14]}
+      arrayOfImages={[
+        { imgSrc: img1, type: "vertical" },
+        { imgSrc: img2, type: "vertical" },
+        { imgSrc: img3, type: "vertical" },
+        { imgSrc: img4, type: "horizontal" },
+        { imgSrc: img5, type: "vertical" },
+        { imgSrc: img6, type: "vertical" },
+        { imgSrc: img7, type: "horizontal" },
+        { imgSrc: img8, type: "horizontal" },
+        { imgSrc: img9, type: "horizontal" },
+        { imgSrc: img10, type: "horizontal" },
+        { imgSrc: img11, type: "horizontal" },
+        { imgSrc: img12, type: "horizontal" },
+        { imgSrc: img13, type: "horizontal" },
+        { imgSrc: img14, type: "horizontal" },
+      ]}
     />
   );
 };

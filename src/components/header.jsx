@@ -13,7 +13,7 @@ import gsap from 'gsap'
 const Header = (props) => {
   const mobileNavRef = createRef(null)
   const tl = gsap.timeline()
- 
+
 
 
   const showHideMenu = () => {
@@ -64,6 +64,16 @@ const HeaderRow= styled(Row)`
   & a{
     outline: none;
   }
+  @media(min-width:800px){
+    align-items: center;
+    z-index: 5000;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    padding:10px 0;
+
+  }
+
 `
 const Logo = styled.img`
   width: 70px;

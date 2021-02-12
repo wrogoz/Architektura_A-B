@@ -22,7 +22,7 @@ function App() {
       <GlobalStyles />
 
       <Header />
-
+      <ContentWrapper>
       <Switch>
         <Route path="/projekty">
           <Architecture />
@@ -68,6 +68,7 @@ function App() {
           <HomePage/>
         </Route>
       </Switch>
+      </ContentWrapper>
 
 
     </StyledContainer>
@@ -85,9 +86,10 @@ const StyledContainer = styled(Container)`
   flex-direction: column;
   font-size: 0.7rem;
   @media(min-width:800px){
-    padding:15px;
-    padding-bottom:0;
+    padding: 0 15px;
   }
 `;
-
+const ContentWrapper = styled.div`
+  margin-top:100px;
+`
 export default App;
