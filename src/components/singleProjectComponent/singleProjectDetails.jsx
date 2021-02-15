@@ -128,8 +128,8 @@ const ImageCol = styled(Col)`
   @media (min-width: 800px) {
     display: flex;
     //added
-    margin: 10px 0;
-    padding:0 10px;
+    margin: 7px 0;
+    padding:0 7px;
     //adding finished
     height: auto;
   }
