@@ -12,7 +12,7 @@ import img9 from "../../../images/entries/apartament_katowice_k18/AB_K18_9.jpg";
 import img10 from "../../../images/entries/apartament_katowice_k18/AB_K18_10.jpg";
 import img11 from "../../../images/entries/apartament_katowice_k18/AB_K18_11.jpg";
 import img12 from "../../../images/entries/apartament_katowice_k18/AB_K18_12.jpg";
-import img13 from "../../../images/entries/apartament_katowice_k18/AB_K18_13.jpg";
+
 
 
 
@@ -27,9 +27,21 @@ const ApartamentKatowiceK18 = () => {
       realization="2018"
       size="90"
       photograph="Ola Jankowska Olikj.com"
+      arrayOfImages={[
+        { imgSrc: img1, type: "horizontal" },
+        { imgSrc: img2, type: "vertical" },
+        { imgSrc: img3, type: "vertical" },
+        { imgSrc: img4, type: "vertical" },
+        { imgSrc: img5, type: "vertical" },
+        { imgSrc: img6, type: "vertical" },
+        { imgSrc: img7, type: "vertical" },
+        { imgSrc: img8, type: "vertical" },
+        { imgSrc: img9, type: "vertical" },
+        { imgSrc: img10, type: "vertical" },
+        { imgSrc: img11, type: "vertical" },
+        { imgSrc: img12, type: "horizontal" },
 
-
-      arrayOfImages={[img1, img2, img3, img4, img5,img6,img7,img8,img9,img10,img11,img12,img13]}
+      ]}
     />
   );
 };

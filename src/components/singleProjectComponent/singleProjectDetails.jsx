@@ -29,7 +29,7 @@ const SingleProject = (props) => {
         );
       } else {
         return (
-          <ImageCol xs={5} key={id}>
+          <ImageCol xs={6} key={id}>
             <Img src={el.imgSrc} />
           </ImageCol>
         );
@@ -128,8 +128,8 @@ const ImageCol = styled(Col)`
   @media (min-width: 800px) {
     display: flex;
     //added
-    margin: 10px 10px;
-    padding:0;
+    margin: 10px 0;
+    padding:0 10px;
     //adding finished
     height: auto;
   }
@@ -147,7 +147,7 @@ const Img = styled(Image)`
     /* max-width: 550px; */
     /* max-height:87vh;
     max-width: 460px;             TO Settle*/
-    max-width:1000px;
+    max-width:1200px;
   }
 `;
 
