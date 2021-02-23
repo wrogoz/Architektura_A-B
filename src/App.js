@@ -90,6 +90,8 @@ const StyledContainer = styled(Container)`
   }
 `;
 const ContentWrapper = styled.div`
-
+@media(min-width:800px){
+    margin-top:100px;
+  }
 `
 export default App;
