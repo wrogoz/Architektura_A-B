@@ -52,11 +52,12 @@ const Header = (props) => {
 };
 
 const HeaderBox = styled.header`
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   overflow:hidden;
   @media(min-width:800px){
     width:98vw;
+    margin-bottom: 20px;
   }
 `;
 const HeaderRow= styled(Row)`
