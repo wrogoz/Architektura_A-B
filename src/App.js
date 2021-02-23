@@ -90,6 +90,6 @@ const StyledContainer = styled(Container)`
   }
 `;
 const ContentWrapper = styled.div`
-  margin-top:100px;
+
 `
 export default App;

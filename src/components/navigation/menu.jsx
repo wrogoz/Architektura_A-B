@@ -27,6 +27,8 @@ useEffect(() => {
         <MenuLink to="/kontakt">kontakt</MenuLink>
       </li>
 
+
+
     </Ul>
   );
 };
@@ -55,8 +57,5 @@ const MenuLink = styled(NavLink)`
   font-weight:bold;
 }
 `;
-const SocialIcon = styled.i`
 
-
-`;
 export default Menu;

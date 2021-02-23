@@ -60,12 +60,15 @@ const SingleProject = (props) => {
   );
 };
 const SingleProjectContainer = styled.section`
+
   @media (min-width: 800px) {
+
     display: flex;
     justify-content: center;
   }
 `;
 const DescriptionRow = styled(Row)`
+
   @media (min-width: 800px) {
     width: 25%;
     position: absolute;

@@ -23,7 +23,7 @@ const DesktopEntries = (props) => {
 
   useEffect(() => {
     gsap.from(imagesRef.current.children,{opacity:0,duration:0.6,stagger:0.2,ease: "steps(12)"})
-    // eslint-disable-next-line 
+    // eslint-disable-next-line
   }, [])
   return (
     <DesktopEntriesContainer noGutters={true} ref={imagesRef}>
@@ -35,7 +35,8 @@ const DesktopEntries = (props) => {
 const DesktopEntriesContainer = styled(Row)`
   width:70%;
   margin:0 auto;
-  
+
+
 `
 
 export default DesktopEntries
