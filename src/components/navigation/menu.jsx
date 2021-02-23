@@ -1,6 +1,6 @@
 import React,{useEffect,createRef} from "react";
 import gsap from 'gsap'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Menu = () => {
@@ -9,34 +9,35 @@ const navRef = createRef(null)
 
 useEffect(() => {
   gsap.from(navRef.current.children, {opacity:0,stagger:0.2,x:30,duration:1.4,ease:"power4.out",delay:0.3})
-// eslint-disable-next-line 
+// eslint-disable-next-line
 }, [])
 
   return (
     <Ul ref={navRef}>
       <li>
-        <NavLink to="/projekty">Projekty</NavLink>
+        <MenuLink to="/projekty">Projekty</MenuLink>
       </li>
       <li>
-        <NavLink to="/architecture">Architektura</NavLink>
+        <MenuLink to="/architecture">Architektura</MenuLink>
       </li>
       <li>
-        <NavLink to="/entries">wnętrza</NavLink>
+        <MenuLink to="/entries" activeClassName="active">wnętrza</MenuLink>
       </li>
       <li>
-        <NavLink to="/kontakt">kontakt</NavLink>
+        <MenuLink to="/kontakt">kontakt</MenuLink>
       </li>
+
     </Ul>
   );
 };
-const Ul = styled.ul` 
+const Ul = styled.ul`
   display: flex;
-  
+
   list-style: none;
   line-height: 30px;
   margin-bottom: -5px;
 `
-const NavLink = styled(Link)`
+const MenuLink = styled(NavLink)`
   text-decoration: none;
   color: #000;
   padding: 0 15px;
@@ -48,7 +49,14 @@ const NavLink = styled(Link)`
   &:visited {
     text-decoration: none;
     color: #000;
-  }
-`;
 
+  }
+&.active{
+  font-weight:bold;
+}
+`;
+const SocialIcon = styled.i`
+
+
+`;
 export default Menu;
