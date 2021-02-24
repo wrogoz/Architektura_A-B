@@ -11,13 +11,14 @@ import ApartamentKatowiceK18 from './components/entries-elements/EntryPages/apar
 import DomNosyN1 from'./components/entries-elements/EntryPages/DomNosyN1'
 import MieszkanieKatowiceK2 from './components/entries-elements/EntryPages/mieszkanieKatowiceK2'
 import MieszkanieKatowiceK17 from './components/entries-elements/EntryPages/mieszkanieKatowiceK17'
-
-
+import DomPsaryP7 from './components/entries-elements/EntryPages/domPsaryP7'
+import DomZabrzeZ10 from './components/entries-elements/EntryPages/zabrzeZ10'
+import DomOrzeszeO1 from './components/entries-elements/EntryPages/orzeszeO1'
 
 import KuchniaBytomB6 from './components/entries-elements/EntryPages/kuchnia_bytom_b6'
 import KuchniaBytomB2 from './components/entries-elements/EntryPages/kuchnia_bytom_b2'
 import DomJednorodzinnyC7 from './components/entries-elements/EntryPages/domCieszynC7'
-import DomPsaryP7 from './components/entries-elements/EntryPages/domPsaryP7'
+
 import SwimmingPool from "./components/architecture-elements/ArchitecturePages/swimmingPool";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/header";
@@ -43,7 +44,7 @@ function App() {
         <Route path="/architecture">
           <Architecture />
         </Route>
-
+                          {/* ENTRY ROUTES */}
         <Route exact path="/entries/apartament_katowice_k18">
           <ApartamentKatowiceK18 />
         </Route>
@@ -60,6 +61,18 @@ function App() {
           <MieszkanieKatowiceK17 />
         </Route>
 
+        <Route exact path="/entries/dom_jednorodzinny_psary_p7">
+          < DomPsaryP7/>
+        </Route>
+
+        <Route exact path="/entries/dom_jednorodzinny_zabrze_z10">
+          < DomZabrzeZ10/>
+        </Route>
+
+        <Route exact path="/entries/dom_jednorodzinny_orzesze_O1">
+          < DomOrzeszeO1/>
+        </Route>
+
         <Route exact path="/entries/domCieszynC7">
           <DomJednorodzinnyC7 />
         </Route>
@@ -70,9 +83,8 @@ function App() {
           <KuchniaBytomB6 />
         </Route>
 
-        <Route exact path="/entries/dom_jednorodzinny_psary_p7">
-          < DomPsaryP7/>
-        </Route>
+
+
         <Route path="/entries">
           <Entries />
         </Route>
