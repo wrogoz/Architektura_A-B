@@ -14,8 +14,12 @@ import MieszkanieKatowiceK17 from './components/entries-elements/EntryPages/mies
 import DomPsaryP7 from './components/entries-elements/EntryPages/domPsaryP7'
 import DomZabrzeZ10 from './components/entries-elements/EntryPages/zabrzeZ10'
 import DomOrzeszeO1 from './components/entries-elements/EntryPages/orzeszeO1'
-
 import KuchniaBytomB6 from './components/entries-elements/EntryPages/kuchnia_bytom_b6'
+import LazienkaWarszawaW6 from './components/entries-elements/EntryPages/warszawaW6'
+import DomLaziskaL31 from './components/entries-elements/EntryPages/laziskaL31'
+import KuchniaKatowiceK25 from './components/entries-elements/EntryPages/katowiceK25'
+import SalonRogoznikR4 from './components/entries-elements/EntryPages/salonRogoznikR4'
+import LazienkaRogoznikR4 from './components/entries-elements/EntryPages/lazienkaRogoznikR4'
 import KuchniaBytomB2 from './components/entries-elements/EntryPages/kuchnia_bytom_b2'
 import DomJednorodzinnyC7 from './components/entries-elements/EntryPages/domCieszynC7'
 
@@ -73,15 +77,39 @@ function App() {
           < DomOrzeszeO1/>
         </Route>
 
-        <Route exact path="/entries/domCieszynC7">
-          <DomJednorodzinnyC7 />
-        </Route>
         <Route exact path="/entries/kuchnia_bytom_B2">
           <KuchniaBytomB2 />
         </Route>
+
+        <Route exact path="/entries/lazienka_warszawa_W6">
+          <LazienkaWarszawaW6 />
+        </Route>
+
+        <Route exact path="/entries/dom_laziska_L31">
+          <DomLaziskaL31 />
+        </Route>
+
+        <Route exact path="/entries/kuchnia_katowice_K25">
+          <KuchniaKatowiceK25 />
+        </Route>
+
+        <Route exact path="/entries/salon_rogoznik_R4">
+          <SalonRogoznikR4 />
+        </Route>
+
+        <Route exact path="/entries/lazienka_Rogoznik_R4">
+          <LazienkaRogoznikR4 />
+        </Route>
+
         <Route exact path="/entries/kuchnia_bytom_b6">
           <KuchniaBytomB6 />
         </Route>
+
+        <Route exact path="/entries/domCieszynC7">
+          <DomJednorodzinnyC7 />
+        </Route>
+
+
 
 
 

@@ -1,20 +1,20 @@
 import React from "react";
 import SingleProject from "../../singleProjectComponent/singleProjectDetails";
-import img1 from "../../../images/entries/kuchnia_bytom_b2/AB_B2_1.jpg";
-import img2 from "../../../images/entries/kuchnia_bytom_b2/AB_B2_2.jpg";
-import img3 from "../../../images/entries/kuchnia_bytom_b2/AB_B2_3.jpg";
+import img1 from "../../../images/entries/katowice_K25/AB_K25_1.jpg";
+import img2 from "../../../images/entries/katowice_K25/AB_K25_2.jpg";
+import img3 from "../../../images/entries/katowice_K25/AB_K25_3.jpg";
 
 
-const KuchniaBytomB2 = () => {
+const KuchniaKatowiceK25 = () => {
   return (
     <SingleProject
-      projectName="Kuchnia w kamienicy B2"
+      projectName="Kuchnia K25"
       company="A+B ARCHITEKTURA"
       authors="Anna Wilk-Tokarczyk, Beata Kosok"
-      location="Bytom"
-      project="2016"
-      realization="2017"
-      size="14"
+      location="Katowice"
+      project="2020"
+      realization="2020"
+      size="13"
       arrayOfImages={[
         { imgSrc: img1, type: "horizontal" },
         { imgSrc: img2, type: "horizontal" },
@@ -26,4 +26,4 @@ const KuchniaBytomB2 = () => {
 };
 
 
-export default KuchniaBytomB2;
+export default KuchniaKatowiceK25;
