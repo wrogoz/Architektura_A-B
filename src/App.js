@@ -4,7 +4,9 @@ import styled from "styled-components";
 import Container from "react-bootstrap/Container";
 import HomePage from "./components/homePage";
 import Entries from "./components/entries";
-
+import { Switch, Route } from "react-router-dom";
+import Header from "./components/header";
+import Contact from './components/contact'
 import Architecture from "./components/architecture";
 // ENTRY IMPORTS
 import ApartamentKatowiceK18 from './components/entries-elements/EntryPages/apartamentKatowiceK18.jsx'
@@ -22,11 +24,12 @@ import SalonRogoznikR4 from './components/entries-elements/EntryPages/salonRogoz
 import LazienkaRogoznikR4 from './components/entries-elements/EntryPages/lazienkaRogoznikR4'
 import KuchniaBytomB2 from './components/entries-elements/EntryPages/kuchnia_bytom_b2'
 import DomJednorodzinnyC7 from './components/entries-elements/EntryPages/domCieszynC7'
+// ARCHITECTURE IMPORTS
+import ArchitecturePsaryP7 from './components/architecture-elements/ArchitecturePages/architecturePsaryP7'
+import ArchitectureZabrzeZ10 from './components/architecture-elements/ArchitecturePages/architectureZabrzeZ10'
 
-import SwimmingPool from "./components/architecture-elements/ArchitecturePages/swimmingPool";
-import { Switch, Route } from "react-router-dom";
-import Header from "./components/header";
-import Contact from './components/contact'
+// ALL PROJECTS LIST
+import AllProjects from './components/allProjects'
 
 function App() {
   return (
@@ -37,12 +40,15 @@ function App() {
       <ContentWrapper>
       <Switch>
         <Route path="/projekty">
-          <Architecture />
-          <Entries />
+          <AllProjects/>
+        </Route>
+                          {/* ARCHITECTURE ROUTES */}
+        <Route exact path="/entries/architektura/zabrze_Z10">
+          <ArchitectureZabrzeZ10 />
         </Route>
 
-        <Route exact path="/architecture/swimmingPool">
-          <SwimmingPool />
+        <Route exact path="/entries/architektura/psary_P7">
+        <ArchitecturePsaryP7/>
         </Route>
 
         <Route path="/architecture">

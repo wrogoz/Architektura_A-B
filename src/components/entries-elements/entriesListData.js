@@ -9,9 +9,8 @@ import AB_L31_1 from '../../images/entries/laziska_L31/AB_L31_1.jpg'
 import AB_K25_1 from '../../images/entries/katowice_K25/AB_K25_1.jpg'
 import AB_R4_1 from '../../images/entries/salon_rogoznik_R4/AB_R4_1.jpg'
 import AB_RL4_1 from '../../images/entries/lazienka_rogoznik_R4/AB_RL4_1.jpg'
-
-import AB_B6_1 from '../../images/entries/bytom_B6/AB_B6_1.jpg'
 import AB_B2_1 from '../../images/entries/kuchnia_bytom_b2/AB_B2_1.jpg'
+import AB_B6_1 from '../../images/entries/bytom_B6/AB_B6_1.jpg'
 import AB_C7_1 from '../../images/entries/cieszyn_C7/AB_C7_1.jpg';
 
 
