@@ -36,6 +36,7 @@ const Header = (props) => {
         <Nav xs={8}>
           {props.WindowWidth > 800 ? (
             <Menu />
+
           ) : (
             <BurgerIcon onClick={showHideMenu} />
           )}
@@ -58,6 +59,7 @@ const HeaderBox = styled.header`
   @media(min-width:800px){
     width:98vw;
     margin-bottom: 20px;
+
   }
 `;
 const HeaderRow= styled(Row)`
@@ -77,9 +79,10 @@ const HeaderRow= styled(Row)`
 
 `
 const Logo = styled.img`
-  width: 70px;
+  width: 55px;
   height: auto;
   align-self: center;
+  padding-top:10px;
 `;
 const Nav = styled(Col)`
   display: flex;
