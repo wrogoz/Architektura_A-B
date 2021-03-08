@@ -72,7 +72,7 @@ const Mask = styled.div`
   position:absolute;
   height:100%;
   width:94%;
-  background-color:rgba(0,0,0,0.3);
+  background-color:rgba(0,0,0,0.1);
   display:flex;
   align-items:center;
   justify-content:center;
