@@ -28,12 +28,15 @@ const Header = (props) => {
   return (
     <HeaderBox>
       <HeaderRow>
-        <Col xs={4}>
+        <Col xs={2} lg={4}>
           <Link to="/" onClick={props.isMenuOpen ? showHideMenu : null}>
             <Logo src={logo} alt="logo" />
           </Link>
         </Col>
-        <Nav xs={8}>
+        {props.WindowWidth <1000?  <TitleCol xs={8} >
+          <CompanyName>A+B Architektura</CompanyName>
+        </TitleCol> : null }
+        <Nav xs={2} lg={8}>
           {props.WindowWidth > 800 ? (
             <Menu />
 
@@ -62,6 +65,7 @@ const HeaderBox = styled.header`
 
   }
 `;
+
 const HeaderRow= styled(Row)`
   align-items:center;
   & a{
@@ -80,16 +84,31 @@ const HeaderRow= styled(Row)`
 `
 const Logo = styled.img`
   width: 55px;
-  height: auto;
   align-self: center;
   padding-top:10px;
 `;
+
+const TitleCol = styled(Col) `
+  display:flex;
+  justify-content:center;
+  align-items:center;
+`
+const CompanyName = styled.p`
+  margin:0;
+  padding:0;
+  font-size:0.9rem;
+  @media(min-width:800px){
+    display:none;
+  }
+
+`
 const Nav = styled(Col)`
   display: flex;
   list-style: none;
   justify-content: flex-end;
   align-items: center;
   height: 100%;
+
 `;
 
 const mapStateToProps = (state) => {

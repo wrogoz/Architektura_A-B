@@ -32,7 +32,7 @@ const ListCreatorDesktop = (props) => {
 };
 
 const DesktopEntriesContainer = styled(Row)`
-  width:55%;
+  width:75%;
   max-width:1200px;
   margin:0 auto;
 

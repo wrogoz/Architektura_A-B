@@ -19,6 +19,10 @@ const MobileProjectElement = (props)=>{
 
           <ImgBox>
             <Img src={props.imgSrc} rounded />
+            <Mask>
+            <p>Title_Architektura</p>
+            </Mask>
+
           </ImgBox>
         </Link>
       </Col>
@@ -34,17 +38,46 @@ const Img = styled(Image)`
   }
 `;
 const ImgBox = styled.div`
-
+  position:relative;
   overflow: hidden;
   margin:10px 0;
   display:flex;
   align-items:flex-start;
+  justify-content:center;
   @media(orientation:landscape ){
     height:auto;
     display:flex;
     justify-content:center;
+
+  }
+  p{
+
+    font-size:1rem;
+    text-transform:uppercase;
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    letter-spacing:1px;
+
+
+
+
+
+    margin:0;
+    /* background-color:rgba(0,0,0,0.25) */
+
   }
 `;
+const Mask = styled.div`
+  position:absolute;
+  height:100%;
+  width:94%;
+  background-color:rgba(0,0,0,0.3);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 15px;
+`
 
 const mapStateToProps = (state)=>{
     return {

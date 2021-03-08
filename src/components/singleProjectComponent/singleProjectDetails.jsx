@@ -93,6 +93,7 @@ const Title = styled.p`
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 15px;
+  padding-bottom:10px;
 `;
 const DescriptionBox = styled.section`
   display: flex;
