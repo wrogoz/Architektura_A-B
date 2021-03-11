@@ -58,13 +58,8 @@ const ImgBox = styled.div`
     font-weight:bold;
     text-align:center;
     letter-spacing:1px;
-
-
-
-
-
     margin:0;
-    /* background-color:rgba(0,0,0,0.25) */
+
 
   }
 `;
