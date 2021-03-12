@@ -20,7 +20,7 @@ const MobileProjectElement = (props)=>{
           <ImgBox>
             <Img src={props.imgSrc} rounded />
             <Mask>
-            <p>Title_Architektura</p>
+            <p>{props.title}</p>
             </Mask>
 
           </ImgBox>
@@ -52,7 +52,7 @@ const ImgBox = styled.div`
   }
   p{
 
-    font-size:1rem;
+    font-size:0.85rem;
     text-transform:uppercase;
     color:#fff;
     font-weight:bold;
@@ -67,7 +67,7 @@ const Mask = styled.div`
   position:absolute;
   height:100%;
   width:94%;
-  background-color:rgba(0,0,0,0.1);
+  background-color:rgba(0,0,0,0.2);
   display:flex;
   align-items:center;
   justify-content:center;

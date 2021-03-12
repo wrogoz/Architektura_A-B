@@ -12,6 +12,7 @@ const ListCreatorMobile = (props) => {
         key={i}
         imgSrc={el.imgSrc}
         path={el.path}
+        title={el.title}
       />
     )
   })
