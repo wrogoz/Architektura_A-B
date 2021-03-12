@@ -59,6 +59,7 @@ const ImgBox = styled.div`
     text-align:center;
     letter-spacing:1px;
     margin:0;
+    word-break: break-word;
 
 
   }
