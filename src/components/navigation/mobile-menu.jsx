@@ -14,9 +14,9 @@ const MobileMenu =React.forwardRef((props,ref) => {
       <ul onClick={props.onClick}
           ref={ref}
           >
-        <li>
+        {/* <li>
           <StyledLink to="/">Strona główna</StyledLink>
-        </li>
+        </li> */}
         <li>
           <StyledLink to="/projekty">Projekty</StyledLink>
         </li>
@@ -29,11 +29,22 @@ const MobileMenu =React.forwardRef((props,ref) => {
         <li>
           <StyledLink to="/kontakt">kontakt</StyledLink>
         </li>
-        <li>
+
+        {/*     ICONS IN 1 ROW
+         <li>
             <SocialBox>
               <StyledLink to="/"><img src={facebook} alt="instagram" /></StyledLink>
               <StyledLink to="/"><img src={instagram} alt="instagram" className="socialImg"/></StyledLink>
             </SocialBox>
+
+        </li> */}
+         <li>
+        <StyledLink to="/"><img src={facebook} alt="instagram" /></StyledLink>
+        </li>
+        <li>
+
+              <StyledLink to="/"><img src={instagram} alt="instagram" /></StyledLink>
+
 
         </li>
       </ul>
@@ -75,6 +86,7 @@ const StyledLink = styled(Link)`
   img {
     height: 20px;
     padding: 0;
+    padding-left:15%;
 
   }
   img.socialImg{

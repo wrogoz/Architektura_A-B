@@ -20,7 +20,8 @@ const MobileProjectElement = (props)=>{
           <ImgBox>
             <Img src={props.imgSrc} rounded />
             <Mask>
-            <p>{props.title}</p>
+            <MobileListTitle>{props.title}</MobileListTitle>
+            <MobileListSubtitle>{props.subTitle}</MobileListSubtitle>
             </Mask>
 
           </ImgBox>
@@ -52,14 +53,6 @@ const ImgBox = styled.div`
   }
   p{
 
-    font-size:0.85rem;
-    text-transform:uppercase;
-    color:#fff;
-    font-weight:bold;
-    text-align:center;
-    letter-spacing:1px;
-    margin:0;
-    word-break: break-word;
 
 
   }
@@ -70,11 +63,27 @@ const Mask = styled.div`
   width:94%;
   background-color:rgba(0,0,0,0.2);
   display:flex;
+  flex-direction:column;
   align-items:center;
   justify-content:center;
-  padding:0 15px;
+  padding:10px 15px 0 10px;
 `
+const MobileListTitle = styled.p`
+font-size:0.85rem;
+    text-transform:uppercase;
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    letter-spacing:1px;
+    margin:0;
+    word-break: break-word;
 
+`
+const MobileListSubtitle = styled.p`
+  font-size:0.75rem;
+  color:#fff;
+  padding-top: 10px;
+`
 const mapStateToProps = (state)=>{
     return {
         isMenuOpen:state.isMenuOpen

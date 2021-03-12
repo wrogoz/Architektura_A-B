@@ -53,14 +53,14 @@ const AB_K2 = new ProjectBasicInfo(
 const AB_K17 = new ProjectBasicInfo(
   AB_K17_1,
   "/entries/mieszkanie_katowice_k17",
-  "Mieszkanie_w_kamienicy_katowice_K17",
+  "Mieszkanie_w_kamienicy katowice_K17",
   "Wnętrza",
   "2016"
 );
 const AB_A6 = new ProjectBasicInfo(
   AB_A6_1,
   "/entries/architektura/andrychow_A6",
-  "Osiedle_domów_jednorodzinnych_Andrychów_A6",
+  "Osiedle_domów_jednorodzinnych Andrychów_A6",
   "Architektura",
   "2018"
 );

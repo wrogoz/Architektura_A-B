@@ -93,7 +93,7 @@ const AB_B2 = new ProjectBasicInfo(
 const AB_W1 = new ProjectBasicInfo(
   AB_W1_1,
   "/entries/warszawa_W1",
-  "Pokój_dziecka_Warszawa_W1 ",
+  "Pokój dziecka_Warszawa_W1 ",
   "Wnętrza",
   "2019"
 );
