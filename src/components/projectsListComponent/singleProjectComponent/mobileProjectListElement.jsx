@@ -83,6 +83,7 @@ const MobileListSubtitle = styled.p`
   font-size:0.75rem;
   color:#fff;
   padding-top: 10px;
+  text-transform:uppercase;
 `
 const mapStateToProps = (state)=>{
     return {
