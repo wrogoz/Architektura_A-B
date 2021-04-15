@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import {Link,NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Col from 'react-bootstrap/Col'
 import {Image} from 'react-bootstrap'
 
@@ -32,8 +32,8 @@ const Img = styled(Image)`
 `;
 const ImgBox = styled.div`
 position:relative;
-  max-height: 35vh;
-  max-width:40vw;
+  max-height: 30vh;
+  max-width:45vw;
   overflow: hidden;
   margin:7px;
 

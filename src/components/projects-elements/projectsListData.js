@@ -60,14 +60,14 @@ const AB_K17 = new ProjectBasicInfo(
 );
 const AB_A6 = new ProjectBasicInfo(
   AB_A6_1,
-  "/entries/architektura/andrychow_A6",
+  "/architecture/architektura/andrychow_A6",
   "Osiedle domów jednorodzinnych_Andrychów_A6",
   "Architektura",
   "2018"
 );
 const AB_P7 = new ProjectBasicInfo(
   AB_P7_1,
-  "/entries/architektura/psary_P7",
+  "/architecture/architektura/psary_P7",
   "Dom jednorodzinny_Psary_P7",
   "Architektura",
   "2014"
@@ -81,7 +81,7 @@ const AB_K16 = new ProjectBasicInfo(
 );
 const AB_P7w = new ProjectBasicInfo(
   AB_PWZ7_1,
-  "/entries/dom_jednorodzinny_psary_p7",
+  "/architecturedom_jednorodzinny_psary_p7",
   "Dom jednorodzinny_Psary_P7",
   "Wnętrza",
   "2018"
@@ -95,7 +95,7 @@ const AB_ZW10 = new ProjectBasicInfo(
 );
 const AB_Z10 = new ProjectBasicInfo(
   AB_Z10_1,
-  "/entries/architektura/zabrze_Z10",
+  "/architecture/architektura/zabrze_Z10",
   "Dom jednorodzinny_Zabrze_Z10",
   "Architektura",
   "2017"

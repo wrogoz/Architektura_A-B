@@ -114,7 +114,7 @@ const DescriptionBox = styled.section`
 const ImgRow = styled(Row)`
   display: flex;
   justify-content: center;
-  //added
+
   @media (min-width: 800px) {
     margin:0;
 
@@ -135,10 +135,10 @@ const ImageCol = styled(Col)`
   overflow: hidden;
   @media (min-width: 800px) {
     display: flex;
-    //added
+
     margin: 7px 0;
     padding:0 7px;
-    //adding finished
+
     height: auto;
   }
 `;
@@ -147,14 +147,10 @@ const Img = styled(Image)`
   max-width: 700px;
   padding: 0 10px;
   @media (orientation: landscape) {
-    /* max-width: 550px; */
   }
   @media (min-width: 800px) {
     margin:0;
     padding:0;
-    /* max-width: 550px; */
-    /* max-height:87vh;
-    max-width: 460px;             TO Settle*/
     max-width:1200px;
   }
 `;
