@@ -1,24 +1,24 @@
 import React from 'react';
 import styled from 'styled-components'
-import {Link} from 'react-router-dom';
+import {Link,NavLink} from 'react-router-dom';
 import Col from 'react-bootstrap/Col'
 import {Image} from 'react-bootstrap'
 
 const DesktopProjectElement = (props)=>{
 
-   
+
     return(
         <Col md={6}>
         <Link to={props.path} >
-   
+
           <ImgBox>
-         
+
           <Img src={props.imgSrc} rounded />
           <Mask >
             <Title>{props.title}</Title>
             <SubTitle>{props.subTitle}</SubTitle>
           </Mask>
-          
+
           </ImgBox>
         </Link>
       </Col>
@@ -36,8 +36,8 @@ position:relative;
   max-width:40vw;
   overflow: hidden;
   margin:7px;
-  
-  
+
+
 `;
 const Mask = styled.div`
 display:flex;
@@ -53,10 +53,10 @@ left:0;
   background:#ffffff90;
   padding-top: 5%;
   font-family:interBlackBold;
-  
+
   &:hover{
     opacity:1;
-    
+
 
   }
 

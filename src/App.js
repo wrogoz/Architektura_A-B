@@ -49,15 +49,15 @@ function App() {
           </Route>
           {/* ARCHITECTURE ROUTES */}
 
-          <Route exact path="/entries/architektura/andrychow_A6">
+          <Route exact path="/architecture/andrychow_A6">
             <ArchitectureAndrychowA6 />
           </Route>
 
-          <Route exact path="/entries/architektura/zabrze_Z10">
+          <Route exact path="/architecture/zabrze_Z10">
             <ArchitectureZabrzeZ10 />
           </Route>
 
-          <Route exact path="/entries/architektura/psary_P7">
+          <Route exact path="/architecture/psary_P7">
             <ArchitecturePsaryP7 />
           </Route>
 

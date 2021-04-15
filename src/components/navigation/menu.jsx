@@ -27,10 +27,10 @@ const Menu = () => {
           <MenuLink to="/projekty">Projekty</MenuLink>
         </li>
         <li>
-          <MenuLink to="/architecture">Architektura</MenuLink>
+          <MenuLink to="/architecture" >Architektura</MenuLink>
         </li>
         <li>
-          <MenuLink to="/entries" activeClassName="active">
+          <MenuLink to="/entries">
             wnętrza
           </MenuLink>
         </li>
@@ -73,6 +73,7 @@ const MenuLink = styled(NavLink)`
   &.active {
     font-weight: bold;
   }
+
   &#fb{
     padding-left:0;
   }
@@ -80,6 +81,7 @@ const MenuLink = styled(NavLink)`
     height: 20px;
     padding: 0;
   }
+
 `;
 const CompanyName = styled.p`
   align-self: flex-end;
