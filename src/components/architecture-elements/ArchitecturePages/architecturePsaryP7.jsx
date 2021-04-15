@@ -17,7 +17,7 @@ import img11 from "../../../images/architecture/psary_P7/AB_P7_11.jpg";
 const ArchitecturePsaryP7 = () => {
     return (
         <SingleProject
-          projectName="Salon R4"
+          projectName="Dom jednorodzinny P7"
           company="A+B ARCHITEKTURA"
           authors="Anna Wilk-Tokarczyk, Beata Kosok"
           location="Psary"

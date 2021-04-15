@@ -19,7 +19,7 @@ const DomNosyN1 = () => {
       projectName="DOM JEDNORODZINNY N1"
       company="A+B ARCHITEKTURA"
       authors="Anna Wilk-Tokarczyk, Beata Kosok"
-      location="NOSY"
+      location="Nosy"
       project="2019"
       realization="2019"
       size="114"

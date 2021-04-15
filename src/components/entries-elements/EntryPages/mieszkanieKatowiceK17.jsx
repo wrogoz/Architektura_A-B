@@ -27,6 +27,7 @@ const MieszkanieKatowiceK17 = () => {
       project="2016"
       realization="2016"
       size="95"
+      photograph="Maria Halotta"
 
       arrayOfImages={[
         { imgSrc: img1, type: "horizontal" },

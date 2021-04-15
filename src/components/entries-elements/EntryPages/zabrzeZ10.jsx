@@ -24,7 +24,7 @@ const DomZabrzeZ10 = () => {
       authors="Anna Wilk-Tokarczyk, Beata Kosok"
       location="Zabrze"
       project="2020"
-      realization="2020/2021"
+      realization="2020/21"
       size="186"
       arrayOfImages={[
         { imgSrc: img1, type: "horizontal" },

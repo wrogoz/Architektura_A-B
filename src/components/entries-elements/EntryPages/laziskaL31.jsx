@@ -26,7 +26,7 @@ const DomLaziskaL31 = () => {
       authors="Anna Wilk-Tokarczyk, Beata Kosok"
       location="Łaziska Górne"
       project="2020"
-      realization="2020"
+
       size="107"
       arrayOfImages={[
         { imgSrc: img1, type: "horizontal" },

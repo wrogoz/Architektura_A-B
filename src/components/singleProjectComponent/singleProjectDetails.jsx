@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import styled from "styled-components";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -36,7 +36,10 @@ const SingleProject = (props) => {
       }
     });
   }
+  useEffect(() => {
+    window.scroll(0, 0);
 
+  }, [])
   return (
     <SingleProjectContainer>
       <DescriptionRow>
@@ -47,7 +50,7 @@ const SingleProject = (props) => {
             <p>{props.authors}</p>
             <p>lokalizacja: {props.location}</p>
             <p>projekt: {props.project}</p>
-            <p>realizacja: {props.realization} </p>
+           {props.realization && <p>realizacja: {props.realization} </p>}
             <p>
               powierzchnia: {props.size} m<sup>2</sup>
             </p>
@@ -56,6 +59,7 @@ const SingleProject = (props) => {
         </SingleProjectCol>
       </DescriptionRow>
       <ImgRow>{imageList}</ImgRow>
+
     </SingleProjectContainer>
   );
 };
@@ -103,7 +107,7 @@ const DescriptionBox = styled.section`
   p {
     margin: 0;
     font-size: 0.9rem;
-    /* line-height: 25px;   TO SETTLE! */
+
   }
 `;
 

@@ -25,7 +25,7 @@ const DomCieszynC7 = () => {
         { imgSrc: img1, type: "horizontal" },
         { imgSrc: img2, type: "horizontal" },
         { imgSrc: img3, type: "horizontal" },
-        { imgSrc: img4, type: "horizontal" },
+
         { imgSrc: img5, type: "horizontal" },
         { imgSrc: img6, type: "horizontal" },
         { imgSrc: img7, type: "horizontal" },

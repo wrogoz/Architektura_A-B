@@ -17,6 +17,7 @@ import img13 from "../../../images/entries/orzesze_O1/AB_O1_13.jpg";
 import img14 from "../../../images/entries/orzesze_O1/AB_O1_14.jpg";
 import img15 from "../../../images/entries/orzesze_O1/AB_O1_15.jpg";
 import img16 from "../../../images/entries/orzesze_O1/AB_O1_16.jpg";
+import img17 from "../../../images/entries/orzesze_O1/AB_O1_17.jpg";
 
 
 
@@ -48,6 +49,7 @@ const DomOrzeszeO1 = () => {
         { imgSrc: img14, type: "horizontal" },
         { imgSrc: img15, type: "horizontal" },
         { imgSrc: img16, type: "horizontal" },
+        { imgSrc: img17, type: "horizontal" },
 
       ]}
     />

@@ -14,7 +14,7 @@ import img5 from "../../../images/entries/katowice_K36/AB_K36_5.jpg";
 const KatowiceK36 = () => {
   return (
     <SingleProject
-      projectName="Łazienka K16"
+      projectName="Łazienka K36"
       company="A+B ARCHITEKTURA"
       authors="Anna Wilk-Tokarczyk, Beata Kosok"
       location="Katowice"

@@ -23,7 +23,7 @@ const MieszkanieKatowiceK2 = () => {
       authors="Anna Wilk-Tokarczyk, Beata Kosok"
       location="Katowice"
       project="2020"
-      realization="2020"
+      realization="2020/21"
       size="49"
 
       arrayOfImages={[

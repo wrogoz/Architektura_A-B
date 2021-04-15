@@ -25,7 +25,7 @@ const ApartamentKatowiceK18 = () => {
       location="Katowice"
       project="2018"
       realization="2018"
-      size="90"
+      size="93"
       photograph="Ola Jankowska Olikj.com"
       arrayOfImages={[
         { imgSrc: img1, type: "horizontal" },

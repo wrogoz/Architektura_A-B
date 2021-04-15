@@ -14,6 +14,7 @@ import img11 from "../../../images/entries/psary_P7/AB_PW7_11.jpg";
 import img12 from "../../../images/entries/psary_P7/AB_PW7_12.jpg";
 import img13 from "../../../images/entries/psary_P7/AB_PW7_13.jpg";
 import img14 from "../../../images/entries/psary_P7/AB_PW7_14.jpg";
+import img15 from "../../../images/entries/psary_P7/AB_PW7_15.jpg";
 
 const DomPsaryP7 = () => {
   return (
@@ -40,6 +41,7 @@ const DomPsaryP7 = () => {
         { imgSrc: img12, type: "horizontal" },
         { imgSrc: img13, type: "horizontal" },
         { imgSrc: img14, type: "horizontal" },
+        { imgSrc: img15, type: "horizontal" },
       ]}
     />
   );
