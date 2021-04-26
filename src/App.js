@@ -169,9 +169,7 @@ const StyledContainer = styled(Container)`
   font-family: interblack;
   display: flex;
   overflow-y: scroll;
-  ::-webkit-scrollbar {
-  width: 0px;
-}
+  scrollbar-width:none;
   min-height: 100vh;
   flex-direction: column;
   font-size: 0.7rem;
