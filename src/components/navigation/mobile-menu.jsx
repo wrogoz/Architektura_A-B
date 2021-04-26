@@ -31,13 +31,9 @@ const MobileMenu =React.forwardRef((props,ref) => {
 
          <li>
         <StyledLink to="/"><img src={facebook} alt="instagram" /></StyledLink>
+        <StyledLink to="/"><img src={instagram} alt="instagram" /></StyledLink>
         </li>
-        <li>
-
-              <StyledLink to="/"><img src={instagram} alt="instagram" /></StyledLink>
-
-
-        </li>
+       
       </ul>
     </Nav>
   )
@@ -78,6 +74,9 @@ const StyledLink = styled(Link)`
   }
   img.socialImg{
     margin-left:10px;
+  }
+  img:first-of-type{
+    padding-left:0;
   }
 `;
 
