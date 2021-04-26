@@ -107,8 +107,7 @@ const ContactSection = styled.section`
     display: flex;
     flex-direction: column;
     padding: 0 2vh;
-    overflow:scroll;
-    scrollbar-width:0px;
+   
     ::-webkit-scrollbar { display: none; }
     h5 {
       font-size: 1.15rem;
@@ -116,6 +115,8 @@ const ContactSection = styled.section`
     @media (max-width: 550px) {
       grid-row: 2/3;
       padding-left: 0;
+      overflow:scroll;
+    scrollbar-width:0px;
     }
   }
   div.description {

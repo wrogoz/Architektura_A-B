@@ -20,5 +20,6 @@ export const GlobalStyles= createGlobalStyle`
         overflow-x:hidden;
         overflow-y: overlay;
         scrollbar-width:none;
+        ::-webkit-scrollbar { display: none; }
     }
 `
