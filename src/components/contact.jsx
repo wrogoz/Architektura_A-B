@@ -29,7 +29,7 @@ const Contact = () => {
         <div className="description">
           <h5 className="chapter">O nas</h5>
           <p>
-            {" "}
+          
             Autorska pracownia projektowa A+B ARCHITEKTURA została założona w
             2014r. Realizujemy projekty związane z architekturą i wnętrzami.
             Działamy na terenie Śląska, Małopolski, Pomorza i Warszawy.
@@ -37,7 +37,7 @@ const Contact = () => {
           </p>
           <p className="chapter">ARCHITEKTURA</p>
           <p>
-            {" "}
+           
             Zajmujemy się projektowaniem budynków o różnej skali i funkcji, od
             projektów domów jednorodzinnych po obiekty komercyjne i użyteczności
             publicznej.Opracowujemy inwentaryzacje budowlane. Zakres prac
@@ -107,8 +107,9 @@ const ContactSection = styled.section`
     display: flex;
     flex-direction: column;
     padding: 0 2vh;
-    overflow: scroll;
-   scrollbar-width:none;
+    overflow:scroll;
+    scrollbar-width:0px;
+    ::-webkit-scrollbar { display: none; }
     h5 {
       font-size: 1.15rem;
     }
@@ -120,7 +121,7 @@ const ContactSection = styled.section`
   div.description {
     display: flex;
     flex-direction: column;
-    scrollbar-width: none;
+   
     .chapter {
       margin-bottom: 0;
       padding-bottom: 0;
