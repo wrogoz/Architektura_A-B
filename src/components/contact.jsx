@@ -70,7 +70,7 @@ const ContactSection = styled.section`
     )
     [description-end] 1fr;
   grid-template-rows: 70vh [footer-start]1fr[footer-end];
-  height: 91vh;
+  height: 90vh;
   grid-gap: 10px;
   font-size: 0.9rem;
   @media (max-width: 550px) {
@@ -78,7 +78,7 @@ const ContactSection = styled.section`
       1fr [photos-start description-start]minmax(150px, 70vw)
       [photos-end description-end] 1fr;
     grid-template-rows: 35vh 35vh 1fr [footer-start]1fr[footer-end];
-    height: inherit;
+  
   }
 
   margin-top: auto;
@@ -116,6 +116,7 @@ const ContactSection = styled.section`
     }
     @media (max-width: 550px) {
       grid-row: 2/3;
+      padding-left: 0;
     }
   }
   div.description {
