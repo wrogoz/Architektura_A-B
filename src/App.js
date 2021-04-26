@@ -1,4 +1,4 @@
-import React from "react";
+import React,{createRef} from "react";
 import { GlobalStyles } from "./globalStyles";
 import styled from "styled-components";
 import Container from "react-bootstrap/Container";
@@ -37,8 +37,13 @@ import ArchitectureZabrzeZ10 from "./components/architecture-elements/Architectu
 import AllProjects from "./components/allProjects";
 
 function App() {
+  const x = createRef(null)
+  const test=(e)=>{
+   document.body.requestFullscreen();
+  }
+  
   return (
-    <StyledContainer fluid>
+    <StyledContainer fluid ref={x} onClick={test}>
       <GlobalStyles />
 
       <Header />
