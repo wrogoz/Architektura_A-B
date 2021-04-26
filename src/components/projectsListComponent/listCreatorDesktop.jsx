@@ -37,6 +37,7 @@ const DesktopEntriesContainer = styled(Row)`
   margin:0 auto;
 
 
+
 `
 
 export default ListCreatorDesktop

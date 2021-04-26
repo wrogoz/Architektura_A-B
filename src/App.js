@@ -1,4 +1,4 @@
-import React from "react";
+import React,{createRef} from "react";
 import { GlobalStyles } from "./globalStyles";
 import styled from "styled-components";
 import Container from "react-bootstrap/Container";
@@ -37,8 +37,13 @@ import ArchitectureZabrzeZ10 from "./components/architecture-elements/Architectu
 import AllProjects from "./components/allProjects";
 
 function App() {
+  const x = createRef(null)
+  const test=(e)=>{
+   document.body.requestFullscreen();
+  }
+  
   return (
-    <StyledContainer fluid>
+    <StyledContainer fluid ref={x} onClick={test}>
       <GlobalStyles />
 
       <Header />
@@ -166,10 +171,7 @@ const StyledContainer = styled(Container)`
   padding-bottom: 0;
   font-family: interblack;
   display: flex;
-  overflow-y: scroll;
-  ::-webkit-scrollbar {
-  width: 0px;
-}
+
   min-height: 100vh;
   flex-direction: column;
   font-size: 0.7rem;
@@ -180,7 +182,6 @@ const StyledContainer = styled(Container)`
 const ContentWrapper = styled.div`
   @media (min-width: 800px) {
     margin-top: 80px;
-    
   }
 `;
 export default App;
