@@ -166,7 +166,10 @@ const StyledContainer = styled(Container)`
   padding-bottom: 0;
   font-family: interblack;
   display: flex;
-
+  overflow-y: scroll;
+  ::-webkit-scrollbar {
+  width: 0px;
+}
   min-height: 100vh;
   flex-direction: column;
   font-size: 0.7rem;
@@ -177,6 +180,7 @@ const StyledContainer = styled(Container)`
 const ContentWrapper = styled.div`
   @media (min-width: 800px) {
     margin-top: 80px;
+    
   }
 `;
 export default App;
