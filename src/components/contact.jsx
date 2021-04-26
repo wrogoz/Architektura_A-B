@@ -147,7 +147,7 @@ const PersonalData = styled.div`
 const Maker = styled.section`
   grid-column: 1/-1;
   grid-row: footer-start/footer-end;
-  /* background-color:orange; */
+
   align-self: end;
   min-height: 50px;
 
