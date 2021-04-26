@@ -2,7 +2,7 @@ import React from "react";
 import SingleProject from "../../singleProjectComponent/singleProjectDetails";
 import img1 from "../../../images/entries/kuchnia_bytom_b2/AB_B2_1.jpg";
 import img2 from "../../../images/entries/kuchnia_bytom_b2/AB_B2_2.jpg";
-import img3 from "../../../images/entries/kuchnia_bytom_b2/AB_B2_3.JPG";
+import img3 from "../../../images/entries/kuchnia_bytom_b2/AB_B2_3.jpg"; 
 import img4 from "../../../images/entries/kuchnia_bytom_b2/AB_B2_4.JPG";
 import img5 from "../../../images/entries/kuchnia_bytom_b2/AB_B2_5.JPG";
 import img6 from "../../../images/entries/kuchnia_bytom_b2/AB_B2_6.JPG";

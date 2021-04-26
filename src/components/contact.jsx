@@ -63,19 +63,20 @@ const ContactSection = styled.section`
   display: grid;
   margin-top: auto;
   justify-content: center;
-  grid-template-columns: 1fr [photos-start]minmax(200px, 35vw) [photos-end description-start] minmax(
+  grid-template-columns:
+    1fr [photos-start]minmax(200px, 35vw) [photos-end description-start] minmax(
       200px,
       35vw
-    ) [description-end] 1fr;
+    )
+    [description-end] 1fr;
   grid-template-rows: 70vh [footer-start]1fr[footer-end];
   height: 91vh;
   grid-gap: 10px;
   font-size: 0.9rem;
   @media (max-width: 550px) {
-    grid-template-columns: 1fr [photos-start description-start]minmax(
-        150px,
-        70vw
-      ) [photos-end description-end] 1fr;
+    grid-template-columns:
+      1fr [photos-start description-start]minmax(150px, 70vw)
+      [photos-end description-end] 1fr;
     grid-template-rows: 35vh 35vh 1fr [footer-start]1fr[footer-end];
     height: inherit;
   }
@@ -84,7 +85,6 @@ const ContactSection = styled.section`
   margin-bottom: 0;
   padding-bottom: 0;
   div.photos {
-  
     grid-column: photos-start/photos-end;
     grid-row: 1/2;
     display: flex;
@@ -102,7 +102,6 @@ const ContactSection = styled.section`
     }
   }
   div.descriptionBox {
-   
     grid-column: description-start/description-end;
     grid-row: 1/2;
     display: flex;
