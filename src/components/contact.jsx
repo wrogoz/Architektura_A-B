@@ -77,7 +77,7 @@ const ContactSection = styled.section`
     grid-template-columns:
       1fr [photos-start description-start]minmax(150px, 70vw)
       [photos-end description-end] 1fr;
-    grid-template-rows: 35vh 35vh 1fr [footer-start]1fr[footer-end];
+    grid-template-rows: 35vh 45vh 1fr [footer-start]1fr[footer-end];
   
   }
 
