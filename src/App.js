@@ -168,7 +168,7 @@ const StyledContainer = styled(Container)`
   padding-bottom: 0;
   font-family: interblack;
   display: flex;
-  overflow-y: scroll;
+ 
   scrollbar-width:none;
   min-height: 100vh;
   flex-direction: column;

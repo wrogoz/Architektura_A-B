@@ -120,7 +120,7 @@ const ContactSection = styled.section`
   div.description {
     display: flex;
     flex-direction: column;
-
+    scrollbar-width: none;
     .chapter {
       margin-bottom: 0;
       padding-bottom: 0;
