@@ -81,7 +81,7 @@ const AB_K16 = new ProjectBasicInfo(
 );
 const AB_P7w = new ProjectBasicInfo(
   AB_PWZ7_1,
-  "/architecture/dom_jednorodzinny_psary_p7",
+  "/entries/dom_jednorodzinny_psary_p7",
   "Dom jednorodzinny_Psary_P7",
   "Wnętrza",
   "2018"
