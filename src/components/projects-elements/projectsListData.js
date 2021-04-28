@@ -67,7 +67,7 @@ const AB_A6 = new ProjectBasicInfo(
 );
 const AB_P7 = new ProjectBasicInfo(
   AB_P7_1,
-  "/architecture/architektura/psary_P7",
+  "/architecture/psary_P7",
   "Dom jednorodzinny_Psary_P7",
   "Architektura",
   "2014"
