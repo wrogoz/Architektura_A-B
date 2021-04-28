@@ -53,7 +53,7 @@ const Contact = () => {
         </div>
       </div>
       <Maker>
-        <p>Created by wrogoz@gmail.com 2020</p>
+        <p>Copyrights wrogoz@gmail.com 2020</p>
       </Maker>
     </ContactSection>
   );
@@ -80,6 +80,14 @@ const ContactSection = styled.section`
     grid-template-rows: 35vh 45vh 1fr [footer-start]1fr[footer-end];
   
   }
+  /* @media (max-height: 400px) {
+    grid-template-columns:
+      1fr [photos-start description-start]minmax(150px, 70vw)
+      [photos-end description-end] 1fr;
+    grid-template-rows: 35vh 45vh 1fr [footer-start]1fr[footer-end];
+  
+  } */
+ 
 
   margin-top: auto;
   margin-bottom: 0;
@@ -95,6 +103,9 @@ const ContactSection = styled.section`
       justify-content: center;
       align-items: center;
     }
+    @media (max-height: 400px) {
+      grid-row:1/2;
+    }
     img {
       @media (max-width: 550px) {
      width:100%;
@@ -108,7 +119,8 @@ const ContactSection = styled.section`
     display: flex;
     flex-direction: column;
     padding: 0 2vh;
-   
+    overflow:scroll;
+    scrollbar-width:0px;
     ::-webkit-scrollbar { display: none; }
     h5 {
       font-size: 1.15rem;
@@ -116,8 +128,7 @@ const ContactSection = styled.section`
     @media (max-width: 550px) {
       grid-row: 2/3;
       padding-left: 0;
-      overflow:scroll;
-    scrollbar-width:0px;
+    
     }
   }
   div.description {
@@ -155,6 +166,9 @@ const Maker = styled.section`
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  @media (max-height: 400px) {
+      grid-row:2/3;
+    }
   p {
     padding-top: 2vh;
     width: 100%;
