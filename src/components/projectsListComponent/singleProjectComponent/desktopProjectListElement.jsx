@@ -32,8 +32,8 @@ const Img = styled(Image)`
 `;
 const ImgBox = styled.div`
 position:relative;
-  max-height: 30vh;
-  max-width:45vw;
+  /* max-height: 30vh;
+  max-width:45vw; */
   overflow: hidden;
   margin:7px;
 
