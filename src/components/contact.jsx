@@ -29,7 +29,6 @@ const Contact = () => {
         <div className="description">
           <h5 className="chapter">O nas</h5>
           <p>
-          
             Autorska pracownia projektowa A+B ARCHITEKTURA została założona w
             2014r. Realizujemy projekty związane z architekturą i wnętrzami.
             Działamy na terenie Śląska, Małopolski, Pomorza i Warszawy.
@@ -37,7 +36,6 @@ const Contact = () => {
           </p>
           <p className="chapter">ARCHITEKTURA</p>
           <p>
-           
             Zajmujemy się projektowaniem budynków o różnej skali i funkcji, od
             projektów domów jednorodzinnych po obiekty komercyjne i użyteczności
             publicznej.Opracowujemy inwentaryzacje budowlane. Zakres prac
@@ -78,16 +76,7 @@ const ContactSection = styled.section`
       1fr [photos-start description-start]minmax(150px, 70vw)
       [photos-end description-end] 1fr;
     grid-template-rows: 35vh 45vh 1fr [footer-start]1fr[footer-end];
-  
   }
-  /* @media (max-height: 400px) {
-    grid-template-columns:
-      1fr [photos-start description-start]minmax(150px, 70vw)
-      [photos-end description-end] 1fr;
-    grid-template-rows: 35vh 45vh 1fr [footer-start]1fr[footer-end];
-  
-  } */
- 
 
   margin-top: auto;
   margin-bottom: 0;
@@ -96,7 +85,7 @@ const ContactSection = styled.section`
     grid-column: photos-start/photos-end;
     grid-row: 1/2;
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: center;
     overflow: hidden;
     @media (max-width: 550px) {
@@ -104,13 +93,13 @@ const ContactSection = styled.section`
       align-items: center;
     }
     @media (max-height: 400px) {
-      grid-row:1/2;
+      grid-row: 1/2;
     }
     img {
       @media (max-width: 550px) {
-     width:100%;
-    }
-     width:65%;
+        width: 100%;
+      }
+      width: 65%;
     }
   }
   div.descriptionBox {
@@ -119,22 +108,28 @@ const ContactSection = styled.section`
     display: flex;
     flex-direction: column;
     padding: 0 2vh;
-    overflow:scroll;
-    scrollbar-width:0px;
-    ::-webkit-scrollbar { display: none; }
+   
+    ::-webkit-scrollbar {
+      display: none;
+    }
     h5 {
       font-size: 1.15rem;
     }
     @media (max-width: 550px) {
       grid-row: 2/3;
       padding-left: 0;
-    
+      overflow: scroll;
+    scrollbar-width: 0px;
+    }
+    @media (max-height: 450px) {
+      overflow: scroll;
+    scrollbar-width: 0px;
     }
   }
   div.description {
     display: flex;
     flex-direction: column;
-   
+
     .chapter {
       margin-bottom: 0;
       padding-bottom: 0;
@@ -167,8 +162,8 @@ const Maker = styled.section`
   justify-content: center;
   align-items: flex-end;
   @media (max-height: 400px) {
-      grid-row:2/3;
-    }
+    grid-row: 2/3;
+  }
   p {
     padding-top: 2vh;
     width: 100%;
