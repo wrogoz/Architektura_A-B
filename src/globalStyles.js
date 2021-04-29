@@ -16,17 +16,21 @@ export const GlobalStyles= createGlobalStyle`
         font-weight:normal;
         font-style:normal;
     }
-    body{
-        overflow-x:hidden;
-        overflow-y: overlay;
-        scrollbar-width:none;
-        ::-webkit-scrollbar { display: none; }
-      
-    }
     *{
         margin:0;
         padding:0;
         border: 0;
         font-size:100%;
     }
+    body{
+        overflow-x:hidden;
+        overflow-y: overlay;
+        scrollbar-width:none;
+        ::-webkit-scrollbar { display: none; }
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+      
+    }
+    
 `
