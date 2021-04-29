@@ -84,7 +84,7 @@ const DescriptionRow = styled(Row)`
 const SingleProjectCol = styled(Col)`
   display: flex;
   flex-direction: column;
-  padding-left: 25px;
+  padding-left: 15px;
   margin-bottom: 20px;
   @media (min-width: 800px) {
     padding-left: 15px;
