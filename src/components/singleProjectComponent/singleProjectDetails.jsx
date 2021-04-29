@@ -106,7 +106,7 @@ const DescriptionBox = styled.section`
   }
   p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 
   }
 `;
@@ -145,7 +145,7 @@ const ImageCol = styled(Col)`
 const Img = styled(Image)`
   width: 100%;
   max-width: 700px;
-  padding: 0 10px;
+  padding: 0 ;
   @media (orientation: landscape) {
   }
   @media (min-width: 800px) {
