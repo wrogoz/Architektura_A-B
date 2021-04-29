@@ -106,8 +106,10 @@ const DescriptionBox = styled.section`
   }
   p {
     margin: 0;
-    font-size: 0.7rem;
-
+    font-size: 0.9rem;
+    @media(min-width:550px){
+      font-size:0.7rem;
+    }
   }
 `;
 
