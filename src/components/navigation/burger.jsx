@@ -11,6 +11,7 @@ const BurgerIcon = (props) => {
 };
 const Burger = styled.img`
   height: 40px;
+  transform: translateX(4px);
 `;
 
 export default BurgerIcon;
