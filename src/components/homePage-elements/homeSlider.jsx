@@ -61,9 +61,9 @@ const SliderImage = styled(Image)`
 
 
   @media (min-width: 800px) {
-    height: auto;
-    max-height:84vh;
-    margin:0 auto;
+    
+
+    margin:0 ;
     overflow: hidden;
     width:100%;
 
