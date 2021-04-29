@@ -21,5 +21,11 @@ export const GlobalStyles= createGlobalStyle`
         overflow-y: overlay;
         scrollbar-width:none;
         ::-webkit-scrollbar { display: none; }
+      
+    }
+    *{
+        margin:0;
+        padding:0;
+        border: 0;
     }
 `
