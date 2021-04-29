@@ -48,10 +48,11 @@ import {Link} from 'react-router-dom';
         }
 
 const SliderImage = styled(Image)`
-  height: 80vh;
-  width: auto;
+  min-height: 80vh;
+  width: 100%;
   margin:0 auto;
   overflow: hidden;
+  object-fit:cover;
 
 
   @media(orientation:landscape ){
