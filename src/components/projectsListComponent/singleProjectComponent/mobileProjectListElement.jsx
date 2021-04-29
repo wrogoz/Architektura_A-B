@@ -33,7 +33,7 @@ const MobileProjectElement = (props)=>{
 const Img = styled(Image)`
   width: 100%;
 
-  padding: 0 10px;
+  padding: 0 ;
   @media(orientation:landscape ){
     width:50%;
   }
@@ -60,7 +60,7 @@ const ImgBox = styled.div`
 const Mask = styled.div`
   position:absolute;
   height:100%;
-  width:94%;
+  width:100%;
   background-color:rgba(0,0,0,0.2);
   display:flex;
   flex-direction:column;
