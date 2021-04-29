@@ -66,7 +66,8 @@ const SliderImage = styled(Image)`
     margin:0 ;
     overflow: hidden;
     width:100%;
-
+    min-height: 82vh;
+    object-fit: cover;
   }
 `;
 
