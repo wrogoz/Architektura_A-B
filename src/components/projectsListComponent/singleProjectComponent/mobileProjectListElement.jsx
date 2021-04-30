@@ -70,7 +70,7 @@ const MobileListTitle = styled.p`
   word-break: break-word;
 `;
 const MobileListSubtitle = styled.p`
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   color: #fff;
   padding-top: 10px;
   text-transform: uppercase;

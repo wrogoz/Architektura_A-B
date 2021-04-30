@@ -145,7 +145,7 @@ const AB_K36 = new ProjectBasicInfo(
 const AB_L31 = new ProjectBasicInfo(
   AB_L31_1,
   "/entries/dom_laziska_L31",
-  "Dom jednorodzinny_Ł31",
+  "Dom jednorodzinny_Łaziska_górne_Ł31",
   "Wnętrza",
   "2020"
 );
