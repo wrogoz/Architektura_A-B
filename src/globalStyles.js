@@ -36,5 +36,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-    
+.hideScrollBar{
+    overflow: hidden;
+}    
 `
