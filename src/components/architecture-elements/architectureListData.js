@@ -1,6 +1,7 @@
 import AB_A6_Z2 from "../../images/architecture/andrychow_A6/AB_A6_Z2.jpg";
 import AB_P7_1 from "../../images/architecture/psary_P7/AB_P7_1.jpg";
 import AB_Z10_1 from "../../images/architecture/zabrze_Z10/AB_Z10_1.jpg";
+import AB_K8_1 from "../../images/architecture/baseny_zewn_K8/AB_K8_1.jpg";
 
 class ProjectBasicInfo {
   constructor(imgSrc, path, title, subtitle, projectDate) {
@@ -33,5 +34,12 @@ const AB_Z10 = new ProjectBasicInfo(
   "Architektura",
   "2017"
 );
+const AB_K8 = new ProjectBasicInfo(
+  AB_K8_1,
+  "/architecture/baseny_k8",
+  "Przebudowa basenów zewnętrznych_K8",
+  "Architektura",
+  "2014"
+);
 
-export const architectureListData = [AB_A6, AB_P7, AB_Z10];
+export const architectureListData = [AB_A6, AB_P7, AB_Z10,AB_K8];

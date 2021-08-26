@@ -20,6 +20,8 @@ import AB_B6_1 from "../../images/entries/bytom_B6/AB_B6_1.jpg";
 import AB_C7_1 from "../../images/entries/cieszyn_C7/AB_C7_1.jpg";
 import AB_K36_Z1 from "../../images/entries/katowice_K36/AB_K36_Z1.jpg";
 import AB_K25_1 from "../../images/entries/katowice_K25/AB_K25_1.jpg";
+import AB_K22_1 from "../../images/entries/katowice_K22/AB_K22_1.jpg";
+import AB_K8_1 from "../../images/architecture/baseny_zewn_K8/AB_K8_1.jpg";
 
 class ProjectBasicInfo {
   constructor(imgSrc, path, title, subtitle, projectDate) {
@@ -166,7 +168,7 @@ const AB_RL4 = new ProjectBasicInfo(
 const AB_B6 = new ProjectBasicInfo(
   AB_B6_1,
   "/entries/kuchnia_bytom_B6",
-  "Kuchnia w kamienicy_Bytom_B2",
+  "Kuchnia w kamienicy_Bytom_B6",
   "Wnętrza",
   "2017"
 );
@@ -183,6 +185,20 @@ const AB_K25 = new ProjectBasicInfo(
   "Kuchnia_Katowice_K25",
   "Wnętrza",
   "2020"
+);
+const AB_K22 = new ProjectBasicInfo(
+  AB_K22_1,
+  "/entries/mieszkanie_katowice_K22",
+  "mieszkanie_Katowice_K22",
+  "Wnętrza",
+  "2020"
+);
+const AB_K8 = new ProjectBasicInfo(
+  AB_K8_1,
+  "/architecture/baseny_k8",
+  "Przebudowa basenów zewnętrznych_K8",
+  "Architektura",
+  "2014"
 );
 export const projectsListData = [
   AB_K18,
@@ -206,5 +222,7 @@ export const projectsListData = [
   AB_RL4,
   AB_B6,
   AB_C7,
-  AB_K25
+  AB_K25,
+  AB_K22,
+  AB_K8
 ];

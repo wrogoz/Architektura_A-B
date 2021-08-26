@@ -16,8 +16,8 @@ import AB_B2_1 from "../../images/entries/kuchnia_bytom_b2/AB_B2_1.jpg";
 import AB_B6_1 from "../../images/entries/bytom_B6/AB_B6_1.jpg";
 import AB_C7_1 from "../../images/entries/cieszyn_C7/AB_C7_1.jpg";
 import AB_K36_Z1 from "../../images/entries/katowice_K36/AB_K36_Z1.jpg";
-
-import AB_N1_1 from "../../images/entries/nosy_N1/AB_N1_1.jpg";
+import AB_N1_1 from "../../images/entries/nosy_N1/AB_N1_1list.jpg";
+import AB_K22_1 from "../../images/entries/katowice_K22/AB_K22_1.jpg";
 class ProjectBasicInfo {
   constructor(imgSrc, path, title, subtitle, projectDate) {
     this.imgSrc = imgSrc;
@@ -160,7 +160,13 @@ const AB_K36 = new ProjectBasicInfo(
   "Wnętrza",
   "2014"
 );
-
+const AB_K22 = new ProjectBasicInfo(
+  AB_K22_1,
+  "/entries/mieszkanie_katowice_K22",
+  "mieszkanie_Katowice_K22",
+  "Wnętrza",
+  "2018"
+);
 export const entriesListData = [
   AB_K18,
   AB_N1,
@@ -181,4 +187,5 @@ export const entriesListData = [
   AB_RL4,
   AB_B6,
   AB_C7,
+  AB_K22
 ];

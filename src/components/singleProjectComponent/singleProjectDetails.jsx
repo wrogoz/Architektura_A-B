@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -38,8 +38,7 @@ const SingleProject = (props) => {
   }
   useEffect(() => {
     window.scroll(0, 0);
-
-  }, [])
+  }, []);
   return (
     <SingleProjectContainer>
       <DescriptionRow>
@@ -50,35 +49,36 @@ const SingleProject = (props) => {
             <p>{props.authors}</p>
             <p>lokalizacja: {props.location}</p>
             <p>projekt: {props.project}</p>
-           {props.realization && <p>realizacja: {props.realization} </p>}
-            <p>
-              powierzchnia: {props.size} m<sup>2</sup>
-            </p>
+            {props.realization && <p>realizacja: {props.realization} </p>}
+            {props.size && (
+              <p>
+                powierzchnia: {props.size} m<sup>2</sup>
+              </p>
+            )}
             {props.photograph ? <p>zdjęcia: {props.photograph}</p> : null}
+            {props.visualization ? (
+              <p>wizualizacje: {props.visualization}</p>
+            ) : null}
           </DescriptionBox>
         </SingleProjectCol>
       </DescriptionRow>
       <ImgRow>{imageList}</ImgRow>
-
     </SingleProjectContainer>
   );
 };
 const SingleProjectContainer = styled.section`
-
   @media (min-width: 800px) {
-
     display: flex;
     justify-content: center;
   }
 `;
 const DescriptionRow = styled(Row)`
-
   @media (min-width: 800px) {
     width: 25%;
     position: absolute;
     left: 0;
     z-index: 1000;
-    padding-left:15px;
+    padding-left: 15px;
   }
 `;
 const SingleProjectCol = styled(Col)`
@@ -97,7 +97,7 @@ const Title = styled.p`
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 15px;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 `;
 const DescriptionBox = styled.section`
   display: flex;
@@ -107,8 +107,8 @@ const DescriptionBox = styled.section`
   p {
     margin: 0;
     font-size: 0.9rem;
-    @media(max-width:550px){
-      font-size:0.7rem;
+    @media (max-width: 550px) {
+      font-size: 0.7rem;
     }
   }
 `;
@@ -118,16 +118,15 @@ const ImgRow = styled(Row)`
   justify-content: center;
 
   @media (min-width: 800px) {
-    margin:0;
+    margin: 0;
 
     padding: 0 25%;
   }
   @media (min-width: 1100px) {
-    margin:0;
+    margin: 0;
 
     padding: 0 22%;
   }
-
 `;
 const ImageCol = styled(Col)`
   justify-content: center;
@@ -139,7 +138,7 @@ const ImageCol = styled(Col)`
     display: flex;
 
     margin: 7px 0;
-    padding:0 7px;
+    padding: 0 7px;
 
     height: auto;
   }
@@ -147,13 +146,13 @@ const ImageCol = styled(Col)`
 const Img = styled(Image)`
   width: 100%;
   max-width: 700px;
-  padding: 0 ;
+  padding: 0;
   @media (orientation: landscape) {
   }
   @media (min-width: 800px) {
-    margin:0;
-    padding:0;
-    max-width:1200px;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
   }
 `;
 

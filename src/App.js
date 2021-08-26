@@ -23,6 +23,7 @@ import LazienkaWarszawaW6 from "./components/entries-elements/EntryPages/warszaw
 import KatowiceK11 from "./components/entries-elements/EntryPages/katowice_K11";
 import DomLaziskaL31 from "./components/entries-elements/EntryPages/laziskaL31";
 import KuchniaKatowiceK25 from "./components/entries-elements/EntryPages/katowiceK25";
+import MieszkanieKatowiceK22 from "./components/entries-elements/EntryPages/katowiceK22";
 import SalonRogoznikR4 from "./components/entries-elements/EntryPages/salonRogoznikR4";
 import LazienkaRogoznikR4 from "./components/entries-elements/EntryPages/lazienkaRogoznikR4";
 import KuchniaBytomB2 from "./components/entries-elements/EntryPages/kuchnia_bytom_b2";
@@ -32,6 +33,7 @@ import KatowiceK36 from "./components/entries-elements/EntryPages/katowiceK36";
 import ArchitectureAndrychowA6 from "./components/architecture-elements/ArchitecturePages/architectureAndrychowA6";
 import ArchitecturePsaryP7 from "./components/architecture-elements/ArchitecturePages/architecturePsaryP7";
 import ArchitectureZabrzeZ10 from "./components/architecture-elements/ArchitecturePages/architectureZabrzeZ10";
+import ArchitectureBasenyK8 from "./components/architecture-elements/ArchitecturePages/architectureBasenyK8";
 
 // ALL PROJECTS LIST
 import AllProjects from "./components/allProjects";
@@ -57,6 +59,9 @@ function App() {
 
           <Route exact path="/architecture/zabrze_Z10">
             <ArchitectureZabrzeZ10 />
+          </Route>
+          <Route exact path="/architecture/baseny_k8">
+            <ArchitectureBasenyK8 />
           </Route>
 
           <Route exact path="/architecture/psary_P7">
@@ -141,6 +146,9 @@ function App() {
 
           <Route exact path="/entries/katowice_K36">
             <KatowiceK36 />
+          </Route>
+          <Route exact path="/entries/mieszkanie_katowice_K22">
+            <MieszkanieKatowiceK22 />
           </Route>
 
           <Route path="/entries">
