@@ -14,7 +14,7 @@ const Contact = () => {
             tel: <span>+48 533 085 552</span>
           </p>
           <p>
-            email: <span>wilk@a-plus-b.pl</span>
+            email: <span>wilk@aplusb.pl</span>
           </p>
         </PersonalData>
         <PersonalData>
@@ -23,16 +23,25 @@ const Contact = () => {
             tel: <span>+48 504 292 703</span>
           </p>
           <p>
-            email: <span>kosok@a-plus-b.pl</span>
+            email: <span>kosok@aplusb.pl</span>
           </p>
         </PersonalData>
         <div className="description">
           <h5 className="chapter">O nas</h5>
           <p>
-            Autorska pracownia projektowa A+B ARCHITEKTURA została założona w
-            2014r. Realizujemy projekty związane z architekturą i wnętrzami.
-            Działamy na terenie Śląska, Małopolski, Pomorza i Warszawy.
-            Ukończyłyśmy Wydział Architektury Politechniki Śląskiej w Gliwicach.{" "}
+            A+B Architektura to autorska pracownia projektowa tworzona przez
+            Annę Wilk – Tokarczyk oraz Beatę Kosok od 2014r. Powstanie pracowni
+            poprzedziły lata zdobywania wiedzy i doświadczenia w śląskich
+            biurach projektowych, studia na Wydziale Architektury Politechniki
+            Śląskiej oraz wiele zrealizowanych wspólnie projektów. Projektowanie
+            jest naszą pasją, każde zadanie jest dla nas nowym wyzwaniem do
+            którego podchodzimy indywidualnie. Uważnie wsłuchujemy się w
+            potrzeby Inwestora, poznajemy oczekiwania, a dzięki naszej wiedzy i
+            doświadczeniu potrafimy przekształcić wizję w rzeczywistość. W
+            naszej pracy kładziemy nacisk na wysoką funkcjonalność rozwiązań,
+            estetykę, a do projektowanych przestrzeni podchodzimy z zachowaniem
+            kontekstu otoczenia. W celu zapewnienia kompleksowej usługi
+            współpracujemy z doświadczonymi projektantami branżowymi.
           </p>
           <p className="chapter">ARCHITEKTURA</p>
           <p>
@@ -51,7 +60,7 @@ const Contact = () => {
         </div>
       </div>
       <Maker>
-        <p>Copyrights wrogoz@gmail.com 2020</p>
+        <p>Copyrights Wojciech Rogóż 2021</p>
       </Maker>
     </ContactSection>
   );
@@ -67,21 +76,23 @@ const ContactSection = styled.section`
       35vw
     )
     [description-end] 1fr;
-  grid-template-rows: 70vh [footer-start]1fr[footer-end];
-  height: 90vh;
-
+  grid-template-rows: auto [footer-start]1fr[footer-end];
+  min-height: calc(100vh - 100px);
+  margin-top: auto;
+  margin-bottom: 0;
+ 
   font-size: 0.9rem;
   @media (max-width: 550px) {
     grid-template-columns:
       1fr [photos-start description-start]minmax(150px, 70vw)
       [photos-end description-end] 1fr;
     grid-template-rows: 35vh 1fr [footer-start]1fr[footer-end];
-    grid-row-gap:1rem;
+    grid-row-gap: 1rem;
+  }
+  @media (max-width: 1000px) {
+    height: 100vh;
   }
 
-  margin-top: auto;
-  margin-bottom: 0;
-  padding-bottom: 0;
   div.photos {
     grid-column: photos-start/photos-end;
     grid-row: 1/2;
@@ -109,7 +120,7 @@ const ContactSection = styled.section`
     display: flex;
     flex-direction: column;
     padding: 0 2vh;
-   
+
     ::-webkit-scrollbar {
       display: none;
     }
@@ -119,9 +130,7 @@ const ContactSection = styled.section`
     @media (max-width: 550px) {
       grid-row: 2/3;
       padding-left: 0;
-   
     }
-  
   }
   div.description {
     display: flex;
@@ -155,14 +164,18 @@ const Maker = styled.section`
   align-self: end;
   min-height: 50px;
 
+width:100%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   @media (max-height: 400px) {
-    grid-row: 2/3;
+    grid-row: footer-start/footer-end;
+  }
+  @media(max-width:768px){
+    align-items: center;
   }
   p {
-    padding-top: 2vh;
+   
     width: 100%;
     color: #555;
     text-align: center;
