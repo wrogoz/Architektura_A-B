@@ -23,6 +23,7 @@ import img20 from "../../../images/entries/nosy_N1/AB_N1_20.jpg";
 import img21 from "../../../images/entries/nosy_N1/AB_N1_21.jpg";
 import img22 from "../../../images/entries/nosy_N1/AB_N1_22.jpg";
 import img23 from "../../../images/entries/nosy_N1/AB_N1_23.jpg";
+import img24 from "../../../images/entries/nosy_N1/AB_N1_24.jpg";
 
 
 
@@ -61,6 +62,7 @@ const DomNosyN1 = () => {
         { imgSrc: img21, type: "horizontal" },
         { imgSrc: img22, type: "horizontal" },
         { imgSrc: img23, type: "horizontal" },
+        { imgSrc: img24, type: "horizontal" },
 
       ]}
     />
