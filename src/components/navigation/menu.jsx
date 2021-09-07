@@ -38,14 +38,14 @@ const Menu = () => {
           <MenuLink to="/kontakt">kontakt</MenuLink>
         </li>
         <li>
-          <MenuLink to="/" id="fb">
+          <ExternalLink href="https://www.facebook.com/AB-Architektura-777333362388913" id="fb">
             <img src={facebook} alt="facebook" />
-          </MenuLink>
+          </ExternalLink>
         </li>
         <li>
-          <MenuLink to="/">
+          <ExternalLink href="https://www.instagram.com/aplusb_architektura/?hl=pl">
             <img src={instagram} alt="instagram" />
-          </MenuLink>
+          </ExternalLink>
         </li>
       </Ul>
     </MenuContent>
@@ -56,6 +56,34 @@ const MenuContent = styled.div`
   flex-direction: column;
   padding: 0 10px 0 0;
 `;
+const ExternalLink = styled.a`
+  text-decoration: none;
+  color: #000;
+  padding: 0 15px;
+
+  &:link {
+    text-decoration: none;
+    color: #000;
+    outline: none;
+  }
+  &:visited {
+    text-decoration: none;
+    color: #000;
+  }
+  &.active {
+    font-weight: bold;
+  }
+
+  &#fb{
+    padding-left:0;
+  }
+  img {
+    height: 20px;
+    padding: 0;
+  }
+
+`;
+
 const MenuLink = styled(NavLink)`
   text-decoration: none;
   color: #000;
