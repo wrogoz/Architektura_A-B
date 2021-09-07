@@ -37,12 +37,12 @@ const Menu = () => {
         <li>
           <MenuLink to="/kontakt">kontakt</MenuLink>
         </li>
-        <li>
+        <li className='socialMediaItem'>
           <ExternalLink href="https://www.facebook.com/AB-Architektura-777333362388913" id="fb">
             <img src={facebook} alt="facebook" />
           </ExternalLink>
         </li>
-        <li>
+        <li className='socialMediaItem'>
           <ExternalLink href="https://www.instagram.com/aplusb_architektura/?hl=pl">
             <img src={instagram} alt="instagram" />
           </ExternalLink>
@@ -130,6 +130,9 @@ const Ul = styled.ul`
     a {
       padding: 0;
     }
+  }
+  .socialMediaItem{
+    padding-top: 1%;
   }
 
 `;
