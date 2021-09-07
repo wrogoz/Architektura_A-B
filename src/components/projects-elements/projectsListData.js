@@ -1,6 +1,6 @@
 import AB_K18_1 from "../../images/entries/apartament_katowice_k18/AB_K18_1.jpg";
 import AB_N1_1 from "../../images/entries/nosy_N1/AB_N1_1.jpg";
-import AB_K2_1 from "../../images/entries/katowice_K2/AB_K2_1.jpg";
+import AB_K2_0 from "../../images/entries/katowice_K2/AB_K2_0.jpg";
 import AB_K17_1 from "../../images/entries/katowice_K17/AB_K17_1.jpg";
 import AB_A6_1 from "../../images/architecture/andrychow_A6/AB_A6_1.jpg";
 import AB_P7_1 from "../../images/architecture/psary_P7/AB_P7_1.jpg";
@@ -47,7 +47,7 @@ const AB_N1 = new ProjectBasicInfo(
   "2019"
 );
 const AB_K2 = new ProjectBasicInfo(
-  AB_K2_1,
+  AB_K2_0,
   "/entries/mieszkanie_katowice_k2",
   "Mieszkanie_Katowice_K2",
   "Wnętrza",

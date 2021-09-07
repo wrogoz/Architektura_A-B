@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Carousel from "react-bootstrap/Carousel"
 import Image from "react-bootstrap/Image"
-import {mobileImages,desktopImages} from './imagesData'
+import {mobileImages,desktopImages} from './HomepageImagesData'
 import { connect } from 'react-redux'
 import { changeWindowWidth,changeWindowHeight} from '../../redux/actions';
 import {Link} from 'react-router-dom';
