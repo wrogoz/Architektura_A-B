@@ -25,6 +25,10 @@ const Contact = () => {
           <p>
             email: <span>kosok@aplusb.pl</span>
           </p>
+          <p>
+            Uprawnienia budowlane w spec. arch. do projektowania bez ograniczeń.</p>
+          <p>Członek Śląskiej Izby Architektów.</p>  
+          
         </PersonalData>
         <div className="description">
           <h5 className="chapter">O nas</h5>
@@ -80,7 +84,7 @@ const ContactSection = styled.section`
   min-height: calc(100vh - 100px);
   margin-top: auto;
   margin-bottom: 0;
- 
+
   font-size: 0.9rem;
   @media (max-width: 550px) {
     grid-template-columns:
@@ -88,6 +92,7 @@ const ContactSection = styled.section`
       [photos-end description-end] 1fr;
     grid-template-rows: 35vh 1fr [footer-start]1fr[footer-end];
     grid-row-gap: 1rem;
+    
   }
   @media (max-width: 1000px) {
     height: 100vh;
@@ -109,7 +114,7 @@ const ContactSection = styled.section`
     }
     img {
       @media (max-width: 550px) {
-        width: 100%;
+        width:  90%;
       }
       width: 65%;
     }
@@ -138,7 +143,7 @@ const ContactSection = styled.section`
 
     .chapter {
       margin-bottom: 0;
-      padding-bottom: 0;
+      padding: 10px 0;
     }
     p {
       line-height: 17px;
@@ -164,18 +169,17 @@ const Maker = styled.section`
   align-self: end;
   min-height: 50px;
 
-width:100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   @media (max-height: 400px) {
     grid-row: footer-start/footer-end;
   }
-  @media(max-width:768px){
+  @media (max-width: 768px) {
     align-items: center;
   }
   p {
-   
     width: 100%;
     color: #555;
     text-align: center;
