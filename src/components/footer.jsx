@@ -13,28 +13,24 @@ const Footer = () => {
   );
 };
 const FooterRow = styled(Row)`
- 
-
   display: flex;
   flex-flow: column;
-  justify-content:center;
-  flex-grow:1;
-  
-  @media(min-width:800px){
-  margin: 0;
-  margin-top: 2%;
-  max-height:none;
-        }
+  justify-content: center;
+  flex-grow: 1;
+
+  @media (min-width: 800px) {
+    margin: 0;
+    margin-top: 2%;
+    max-height: none;
+  }
 `;
 const FooterCol = styled(Col)`
   display: flex;
   justify-content: center;
   align-items: center;
-
 `;
 
 const SocialIcon = styled.i`
   margin-left: 20px;
-  
 `;
 export default Footer;

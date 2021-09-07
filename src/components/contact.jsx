@@ -26,12 +26,11 @@ const Contact = () => {
             email: <span>kosok@aplusb.pl</span>
           </p>
           <p>
-            Uprawnienia budowlane w spec. arch. do projektowania bez ograniczeń.</p>
-          <p>Członek Śląskiej Izby Architektów.</p>  
-          
+            Uprawnienia budowlane w spec. arch. do projektowania bez ograniczeń.
+          </p>
+          <p>Członek Śląskiej Izby Architektów.</p>
         </PersonalData>
         <div className="description">
-          <h5 className="chapter">O nas</h5>
           <p>
             A+B Architektura to autorska pracownia projektowa tworzona przez
             Annę Wilk – Tokarczyk oraz Beatę Kosok od 2014r. Powstanie pracowni
@@ -49,17 +48,16 @@ const Contact = () => {
           </p>
           <p className="chapter">ARCHITEKTURA</p>
           <p>
-            Zajmujemy się projektowaniem budynków o różnej skali i funkcji, od
-            projektów domów jednorodzinnych po obiekty komercyjne i użyteczności
-            publicznej.Opracowujemy inwentaryzacje budowlane. Zakres prac
-            projektowych obejmuje: projekty koncepcyjne, projekty budowlane i
-            wykonawcze oraz nadzory autorskie.
+            Projektujemy budynki o różnej skali i funkcji, od domów
+            jednorodzinnych po obiekty komercyjne i użyteczności publicznej.
+            Zakres opracowań obejmuje: projekty koncepcyjne, projekty budowlane
+            i wykonawcze. Świadczymy usługi nadzoru autorskiego.
           </p>
           <p className="chapter">WNĘTRZA</p>
           <p>
             Oferujemy kompleksowy zakres usług związanych z projektowaniem
-            wnętrz oraz nadzorem nad ich realizacją. Szczegółowość projektu
-            dostosowana jest do indywidualnych potrzeb Klienta.
+            wnętrz oraz nadzorem nad ich realizacją. Szczegółowość projektu jest
+            dostosowana do indywidualnych potrzeb Klienta.
           </p>
         </div>
       </div>
@@ -92,7 +90,6 @@ const ContactSection = styled.section`
       [photos-end description-end] 1fr;
     grid-template-rows: 35vh 1fr [footer-start]1fr[footer-end];
     grid-row-gap: 1rem;
-    
   }
   @media (max-width: 1000px) {
     height: 100vh;
@@ -114,7 +111,7 @@ const ContactSection = styled.section`
     }
     img {
       @media (max-width: 550px) {
-        width:  90%;
+        width: 90%;
       }
       width: 65%;
     }

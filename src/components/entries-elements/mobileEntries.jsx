@@ -1,6 +1,6 @@
 import React from "react";
 
-import {entriesListData} from "./entriesListData"
+import {entriesListData} from "../projects-elements/projectsListData"
 
 import ListCreatorMobile from '../projectsListComponent/listCreatorMobile'
 

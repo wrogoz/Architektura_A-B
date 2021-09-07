@@ -224,5 +224,28 @@ export const projectsListData = [
   AB_C7,
   AB_K25,
   AB_K22,
-  AB_K8
+  AB_K8,
 ];
+export const entriesListData = [
+  AB_K18,
+  AB_N1,
+  AB_K2,
+  AB_K17,
+  AB_P7,
+  AB_K16,
+  AB_Z10,
+  AB_O1,
+  AB_B2,
+  AB_W1,
+  AB_W6,
+  AB_K11,
+  AB_K36,
+  AB_L31,
+  AB_K25,
+  AB_R4,
+  AB_RL4,
+  AB_B6,
+  AB_C7,
+  AB_K22,
+];
+export const architectureListData = [AB_A6, AB_P7, AB_Z10, AB_K8];

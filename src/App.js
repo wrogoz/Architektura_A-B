@@ -39,8 +39,6 @@ import ArchitectureBasenyK8 from "./components/architecture-elements/Architectur
 import AllProjects from "./components/allProjects";
 
 function App() {
- 
-  
   return (
     <StyledContainer fluid>
       <GlobalStyles />
@@ -48,7 +46,7 @@ function App() {
       <Header />
       <ContentWrapper>
         <Switch>
-          <Route path="/projekty">
+          <Route path="/projects">
             <AllProjects />
           </Route>
           {/* ARCHITECTURE ROUTES */}
@@ -155,7 +153,7 @@ function App() {
             <Entries />
           </Route>
 
-          <Route path="/kontakt">
+          <Route path="/contact">
             <Contact />
           </Route>
 
@@ -176,8 +174,8 @@ const StyledContainer = styled(Container)`
   padding-bottom: 0;
   font-family: interblack;
   display: flex;
- 
-  scrollbar-width:none;
+
+  scrollbar-width: none;
   min-height: 100vh;
   flex-direction: column;
   font-size: 0.7rem;
@@ -188,7 +186,6 @@ const StyledContainer = styled(Container)`
 const ContentWrapper = styled.div`
   @media (min-width: 800px) {
     margin-top: 80px;
-    
   }
 `;
 export default App;

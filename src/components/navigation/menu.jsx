@@ -18,31 +18,38 @@ const Menu = () => {
     });
     // eslint-disable-next-line
   }, []);
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <MenuContent>
-      <CompanyName>A+B Architektura</CompanyName>
+      <CompanyName onClick={scrollToTop}>A+B Architektura</CompanyName>
       <Ul ref={navRef}>
-        <li>
-          <MenuLink to="/projekty">Projekty</MenuLink>
-        </li>
-        <li>
-          <MenuLink to="/architecture" >Architektura</MenuLink>
-        </li>
-        <li>
-          <MenuLink to="/entries">
-            wnętrza
-          </MenuLink>
-        </li>
-        <li>
-          <MenuLink to="/kontakt">kontakt</MenuLink>
-        </li>
-        <li className='socialMediaItem'>
-          <ExternalLink href="https://www.facebook.com/AB-Architektura-777333362388913" id="fb">
+        {[
+          { name: "Projekty", url: "/projects" },
+          { name: "Architektura", url: "/architecture" },
+          { name: " Wnętrza", url: "/entries" },
+          { name: "kontakt", url: "/contact" },
+        ].map((el, i) => {
+          return (
+            <li key={`ab-${i}`}>
+              <MenuLink to={el.url} onClick={scrollToTop}>
+                {el.name}
+              </MenuLink>
+            </li>
+          );
+        })}
+
+        <li className="socialMediaItem">
+          <ExternalLink
+            href="https://www.facebook.com/AB-Architektura-777333362388913"
+            id="fb"
+          >
             <img src={facebook} alt="facebook" />
           </ExternalLink>
         </li>
-        <li className='socialMediaItem'>
+        <li className="socialMediaItem">
           <ExternalLink href="https://www.instagram.com/aplusb_architektura/?hl=pl">
             <img src={instagram} alt="instagram" />
           </ExternalLink>
@@ -74,14 +81,13 @@ export const ExternalLink = styled.a`
     font-weight: bold;
   }
 
-  &#fb{
-    padding-left:0;
+  &#fb {
+    padding-left: 0;
   }
   img {
     height: 20px;
     padding: 0;
   }
-
 `;
 
 const MenuLink = styled(NavLink)`
@@ -102,14 +108,13 @@ const MenuLink = styled(NavLink)`
     font-weight: bold;
   }
 
-  &#fb{
-    padding-left:0;
+  &#fb {
+    padding-left: 0;
   }
   img {
     height: 20px;
     padding: 0;
   }
-
 `;
 const CompanyName = styled.p`
   align-self: flex-end;
@@ -131,10 +136,9 @@ const Ul = styled.ul`
       padding: 0;
     }
   }
-  .socialMediaItem{
+  .socialMediaItem {
     padding-top: 1%;
   }
-
 `;
 
 export default Menu;

@@ -1,5 +1,5 @@
 import React from "react";
-import {architectureListData} from './architectureListData'
+import {architectureListData} from '../projects-elements/projectsListData'
 import ListCreatorDesktop from '../projectsListComponent/listCreatorDesktop'
 const DesktopArchitecture = (props) => {
     return (
