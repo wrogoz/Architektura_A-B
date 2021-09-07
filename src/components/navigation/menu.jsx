@@ -56,7 +56,7 @@ const MenuContent = styled.div`
   flex-direction: column;
   padding: 0 10px 0 0;
 `;
-const ExternalLink = styled.a`
+export const ExternalLink = styled.a`
   text-decoration: none;
   color: #000;
   padding: 0 15px;
