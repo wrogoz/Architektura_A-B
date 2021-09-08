@@ -33,18 +33,18 @@ const Contact = () => {
         <div className="description">
           <p>
             A+B Architektura to autorska pracownia projektowa tworzona przez
-            Annę Wilk – Tokarczyk oraz Beatę Kosok od 2014r. Powstanie pracowni
+            Annę Wilk – Tokarczyk oraz Beatę Kosok od 2014r.<p>Powstanie pracowni
             poprzedziły lata zdobywania wiedzy i doświadczenia w śląskich
             biurach projektowych, studia na Wydziale Architektury Politechniki
-            Śląskiej oraz wiele zrealizowanych wspólnie projektów. Projektowanie
+            Śląskiej oraz wiele zrealizowanych wspólnie projektów.</p><p>Projektowanie
             jest naszą pasją, każde zadanie jest dla nas nowym wyzwaniem do
             którego podchodzimy indywidualnie. Uważnie wsłuchujemy się w
             potrzeby Inwestora, poznajemy oczekiwania, a dzięki naszej wiedzy i
             doświadczeniu potrafimy przekształcić wizję w rzeczywistość. W
             naszej pracy kładziemy nacisk na wysoką funkcjonalność rozwiązań,
             estetykę, a do projektowanych przestrzeni podchodzimy z zachowaniem
-            kontekstu otoczenia. W celu zapewnienia kompleksowej usługi
-            współpracujemy z doświadczonymi projektantami branżowymi.
+            kontekstu otoczenia.</p> <p> W celu zapewnienia kompleksowej usługi
+            współpracujemy z doświadczonymi projektantami branżowymi.</p>
           </p>
           <p className="chapter">ARCHITEKTURA</p>
           <p>

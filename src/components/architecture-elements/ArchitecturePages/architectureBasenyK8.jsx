@@ -13,7 +13,8 @@ const BasenyK8 = () => {
       client="prywatny"
       project="2014"
       visualization="Dagmara Koszny"
-      company="A+B ARCHITEKTURA Anna Wilk-Tokarczyk, Beata Kosok, Anna Siwińska"
+       company="A+B ARCHITEKTURA"
+          authors="Anna Wilk-Tokarczyk, Beata Kosok oraz Anna Siwińska"
         arrayOfImages={[
             { imgSrc: img1, type: "horizontal" },
             { imgSrc: img2, type: "horizontal" },
