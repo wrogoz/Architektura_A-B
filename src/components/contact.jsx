@@ -137,6 +137,8 @@ const ContactSection = styled.section`
   div.description {
     display: flex;
     flex-direction: column;
+     text-align: justify;
+  text-justify: inter-word;
 
     .chapter {
       margin-bottom: 0;
