@@ -20,8 +20,6 @@ const HomePage = () => {
           buttonMessage="Akceptuję"
       onAccept={() => {}}
       cookie="user-has-accepted-cookies" />
-
-);
         <HomePageSlider />
       </HomeBox>
     </Row>
